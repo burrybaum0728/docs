@@ -1,0 +1,69 @@
+---
+title: "Manage creator email conversations, replies, and follow-ups"
+sidebarTitle: "Conversations"
+description: "Read creator replies in the picobean Mailbox, respond with the rich reply editor and attachments, and schedule follow-ups when creators go quiet."
+---
+
+Creator replies arrive in the **Mailbox** tab of **Campaign**. Each conversation shows the full email thread next to the creator's profile and deal status, so you can respond with full context. This page covers reading and replying to conversations and following up with creators who stop responding.
+
+## Key concepts
+
+| Term | Meaning |
+| --- | --- |
+| **Conversation** | The full email thread with one creator for one campaign. |
+| **Account sidebar** | The creator's profile, roster status, and deal details, shown beside the thread. |
+| **Agent draft** | A reply the AI prepared for you to review. See [AI outreach agent](/email/ai-outreach-agent). |
+| **Follow-up** | A reminder email sent when the creator has not replied. |
+
+## Reply to a creator
+
+<Steps>
+  <Step title="Open the Mailbox">
+    Go to **Campaign** > **Mailbox** and select a conversation.
+  </Step>
+  <Step title="Review the context">
+    Read the thread and check the account sidebar for the creator's stats, deal status, and roster stage.
+  </Step>
+  <Step title="Write your reply">
+    Use the rich reply editor to format text, add Cc or Bcc recipients, and attach files. If an agent draft exists, select **Reply with this draft** to start from it.
+  </Step>
+  <Step title="Send or schedule">
+    Send now, or schedule the reply for later.
+  </Step>
+</Steps>
+
+<Note>
+  Attachments have limits on file count and total size. If you exceed them, picobean shows **Too many attachments** or **Attachments too large**. Invalid Cc or Bcc addresses are rejected.
+</Note>
+
+<Info>
+  Only the original sender can resend a message from a conversation.
+</Info>
+
+## Reply flags and agent states
+
+Conversations can show agent badges:
+
+| Badge | Meaning |
+| --- | --- |
+| **Needs your OK** / **Agent: needs review** | The agent drafted a reply that is waiting for your approval. |
+| **Agent is sending…** | An approved reply is being sent. |
+| **Auto-sent** | The agent sent the reply automatically under your rules. |
+| **Agent send failed** | The send failed. Open the conversation to retry. |
+| **Reviewed · draft saved** | You marked the flag as reviewed. The draft is kept for later use. |
+
+## Follow up with quiet creators
+
+You can follow up in two ways:
+
+- **Sequences**: add **No reply** steps to the campaign sequence so that follow-ups are sent automatically. See [Send and schedule](/email/send-and-schedule).
+- **Agent follow-ups**: set a **Follow-up delay** in days in the agent settings. The agent then drafts a follow-up when there is no reply. Set the delay to 0 to turn this off.
+
+<Warning>
+  If you send a manual reply while an agent reply is queued, the agent's message is canceled. This prevents the creator from receiving two replies.
+</Warning>
+
+## Next steps
+
+- [Set up the AI outreach agent](/email/ai-outreach-agent)
+- [Update roster and deals](/campaigns/roster-and-deals)

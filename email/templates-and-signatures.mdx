@@ -1,0 +1,116 @@
+---
+title: "Create reusable email templates and a shared signature"
+sidebarTitle: "Templates"
+description: "Build reusable email templates with variables, preview personalized messages, and set a shared signature for consistent outreach in picobean."
+---
+
+With the picobean template composer, you write an outreach email once and reuse it across campaigns. Variables such as creator names and custom fields personalize each message, and a shared signature keeps every campaign email consistent. This page explains how to build templates, add variables and attachments, and manage your signature.
+
+## Key concepts
+
+| Term | What it means |
+| --- | --- |
+| Template | A saved subject and message body you can reuse across campaigns. |
+| Variable | A placeholder like `{{creator_name}}` that gets filled in per recipient at send time. |
+| Signature token | The `{{signature}}` placeholder that inserts your shared signature at the end of every email. |
+| Custom column | A per-recipient value you define (for example, `fee`) and add to the send table. |
+| Personalized preview | A side-by-side view that shows how the final email looks for a specific recipient after variables are resolved. |
+
+<Note>
+  Email templates, signatures, and sending are available on the **Enterprise** plan. If you do not see these features, check your plan on the [Billing](/account/billing) page or contact your administrator.
+</Note>
+
+## Build a new template
+
+<Steps>
+  <Step title="Open the composer">
+    Go to **Campaigns** and open a campaign. In the **Email sequence** panel, click **Add step** to open the template composer. You can also start from the **Bulk email** send flow and choose **New template**.
+  </Step>
+  <Step title="Write the subject">
+    Enter a subject line in the **Subject** field. Variables will highlight in blue as you type them.
+  </Step>
+  <Step title="Compose the body">
+    Click into the message body and write your outreach text. Use the toolbar to add formatting, links, emojis, images, or attachments.
+  </Step>
+  <Step title="Add personalization variables">
+    Click the **Personalize** button in the toolbar. Choose from the default variables:
+
+    | Variable | Token | Filled with |
+    | --- | --- | --- |
+    | Creator name | `{{creator_name}}` | The influencer's display name or handle |
+    | Name | `{{name}}` | The first name, or the part before @ in the email address |
+
+    You can also define a **custom variable** (for example, `{{fee}}`) and add a value column for every recipient during setup.
+  </Step>
+  <Step title="Preview the personalized result">
+    Before saving, use the **Personalized preview** panel to choose a recipient from the dropdown. The preview renders the exact subject and body that person will receive, with all variables replaced by real values.
+  </Step>
+  <Step title="Save the template">
+    Give the template a name and click **Save**. It will appear in your template library for future campaigns.
+  </Step>
+</Steps>
+
+## Add or edit a custom variable
+
+Custom variables let you personalize beyond the built-in fields. A common use case is including a personalized offer or fee for each creator.
+
+<Steps>
+  <Step title="Open the variable picker">
+    In the composer toolbar, click **Personalize** and scroll to the bottom of the popover.
+  </Step>
+  <Step title="Name the variable">
+    In the **Add a value column for every recipient** field, type a variable name such as `fee`. Only letters, digits, and underscores are allowed.
+  </Step>
+  <Step title="Insert the token">
+    Click **Add**, and the token `{{fee}}` is inserted into the email at the cursor position.
+  </Step>
+  <Step title="Fill values during setup">
+    When you set up the bulk send, a **fee** column appears in the recipient table. Enter the value for each creator so the email resolves correctly.
+  </Step>
+</Steps>
+
+<Warning>
+  If a variable has no value for a selected recipient, the send is blocked until every selected row has a value. Check the **Bulk confirm** panel before sending.
+</Warning>
+
+## Manage your signature
+
+picobean uses one shared signature across all campaign emails. You can create and manage it from any composer, or from campaign settings.
+
+<Steps>
+  <Step title="Open the signature picker">
+    In any composer, click the **Signature template** button (pen icon) in the toolbar.
+  </Step>
+  <Step title="Create or edit">
+    If no signature exists, click **Create signature**. If one exists, click **Edit** to open the signature editor.
+  </Step>
+  <Step title="Add content">
+    Type your closing, add links, and upload images such as a logo or banner. The editor supports bold, italic, underline, and links.
+  </Step>
+  <Step title="Resize images">
+    Click any image in the editor to select it, then drag the blue corner handle to resize. The width is saved so it renders correctly in email clients.
+  </Step>
+  <Step title="Save">
+    Click **Save signature**. The signature is stored and can be inserted into any template with the `{{signature}}` token.
+  </Step>
+</Steps>
+
+The signature picker also shows a live preview. When you are ready, click the preview to insert the `{{signature}}` token at the end of the current email body.
+
+## Attach files to a template
+
+You can attach files either permanently to a saved template or temporarily during a single send.
+
+| Attachment type | Behavior | Limits |
+| --- | --- | --- |
+| Stored attachments | Saved with the template and included every time it is used | Up to 10 files, 25 MB total |
+| Inline images | Pasted or inserted directly into the body | Resized automatically if over 8 MB |
+| Fresh uploads | Added during a send and sent only for that batch | Same limits as stored attachments |
+
+To add a file, click the **Add attached files** button in the toolbar. Supported types include PDF, DOC, DOCX, TXT, JPG, PNG, and GIF.
+
+## Next steps
+
+- [Connect your mailbox](/email/connect-mailbox) so emails send from your own domain.
+- [Send and schedule emails](/email/send-and-schedule) to deliver templates to your selected creators.
+- [Review conversations and follow-ups](/email/conversations-and-follow-ups) to track replies and open rates.

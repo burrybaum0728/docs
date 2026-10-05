@@ -1,0 +1,153 @@
+---
+title: "Send and schedule bulk outreach emails to creators"
+sidebarTitle: "Send"
+description: "Select recipients, review personalized previews, schedule sends, and track delivery progress for your influencer outreach campaigns in picobean."
+---
+
+picobean's bulk email flow lets you deliver personalized outreach to dozens or hundreds of creators in one action. Choose recipients from saved lists, pasted emails, or CSV uploads, confirm every message in a personalized preview, then send immediately or schedule for later. You can also build email sequences that follow up automatically when creators do not reply. This page covers the full workflow, from choosing recipients to tracking delivery.
+
+<Note>
+  Bulk email send and sequences are available on the **Enterprise** plan. If these options are not visible, check your plan on the [Billing](/account/billing) page or contact your administrator.
+</Note>
+
+## Key concepts
+
+| Term | What it means |
+| --- | --- |
+| Recipient selector | The panel where you choose who receives the email from saved accounts, lists, pasted emails, or CSV uploads. |
+| Bulk confirm panel | The final review screen that lists selected recipients, shows attachments, warns about missing values, and displays a personalized preview. |
+| Schedule send | A delayed send where you pick a date, time, and timezone. |
+| Sequence | A series of timed emails (intro + follow-ups) that send based on whether the recipient replies. |
+| Sent recipients | The history view showing who received an email and whether it was opened, bounced, or marked as spam. |
+
+## Select recipients
+
+<Steps>
+  <Step title="Open the send flow">
+    Go to **Campaigns**, open a campaign, and click **Send emails** to start the bulk send flow.
+  </Step>
+  <Step title="Choose a source">
+    In the **Recipient selector**, pick a source:
+
+    | Source | Description |
+    | --- | --- |
+    | Saved | Influencers already saved to your picobean account from search or Discover. |
+    | List | A pre-built recipient list you created earlier. |
+    | Pasted | Email addresses typed or pasted directly into a text area. |
+    | CSV | A spreadsheet upload with columns for email, name, and any custom variables. |
+  </Step>
+  <Step title="Add recipients">
+    Select the rows you want. Use the table checkboxes to choose individual creators, or select all visible rows. The total selected count appears at the top of the panel.
+  </Step>
+  <Step title="Set custom values">
+    If your template uses custom variables (for example, `{{fee}}`), enter the value for each recipient in the table columns before proceeding.
+  </Step>
+</Steps>
+
+## Review and confirm before sending
+
+The **Bulk confirm** panel is the final safety check before any emails leave your mailbox.
+
+<Steps>
+  <Step title="Review the recipient list">
+    The confirm panel shows every selected recipient with their source (Saved, CSV, Pasted, or List). Use the checkboxes to remove anyone you do not want to include.
+  </Step>
+  <Step title="Check for missing values">
+    If a template variable has no value for a selected recipient, the panel highlights the error. Sending is blocked until every selected row has a value for every used variable. Fill in the missing values or deselect those rows.
+  </Step>
+  <Step title="Preview personalized emails">
+    Open the **Personalized preview** section and choose a recipient from the dropdown. You will see the exact subject and body that person receives, with all variables replaced. Switch between recipients to verify that names, fees, and custom fields resolve correctly.
+  </Step>
+  <Step title="Review attachments">
+    If your template or this send includes attachments, they are listed with file size. The total must stay under 25 MB and 10 files.
+  </Step>
+  <Step title="Add CC or BCC">
+    Click **Add CC & BCC** to include teammates. Start typing and picobean suggests other organization members by name or email.
+  </Step>
+</Steps>
+
+<Warning>
+  Deselecting a recipient only removes them from this send. It does not delete them from the campaign roster. To remove someone from the campaign entirely, use the [campaign roster](/campaigns/roster-and-deals).
+</Warning>
+
+## Send now or schedule
+
+Once you confirm the recipient list and preview look correct, choose when to deliver the emails.
+
+<Steps>
+  <Step title="Send immediately">
+    Click **Send now**. picobean queues the messages and begins delivery. A spinner appears while the batch is submitting.
+  </Step>
+  <Step title="Schedule for later">
+    Click **Schedule send** to open the **Schedule activation** modal. Choose:
+
+    | Field | What to set |
+    | --- | --- |
+    | Time zone | The city timezone the send should respect |
+    | Date | Today, tomorrow, or a future date |
+    | Time | Hour and minute in 24-hour or 12-hour format |
+  </Step>
+  <Step title="Confirm the schedule">
+    After picking the date, time, and timezone, click **Schedule** in the modal. The campaign updates to show a pending scheduled send.
+  </Step>
+</Steps>
+
+<Warning>
+  Double-check the timezone. The schedule respects the selected city timezone, which may differ from your local time.
+</Warning>
+
+## Set up an email sequence
+
+An email sequence is a series of timed messages that send automatically based on recipient behavior. The first step is always an intro email. Follow-up steps send only if the recipient has not replied after a delay you set.
+
+<Steps>
+  <Step title="Open the sequence panel">
+    Inside a campaign, switch to the **Email sequence** panel.
+  </Step>
+  <Step title="Add steps">
+    The first step is **Intro** and cannot be removed. Click **Add step** to create follow-up emails.
+  </Step>
+  <Step title="Set the delay">
+    For each follow-up, choose the **Wait** duration in minutes or hours. The follow-up sends only if the recipient has not replied since the previous step.
+  </Step>
+  <Step title="Write each template">
+    Click a step to open the composer and write the subject and body. You can save the step as a reusable template or use an existing one from your library.
+  </Step>
+  <Step title="Enable or disable steps">
+    Toggle the switch next to each step to enable or pause it. Disabled steps are skipped.
+  </Step>
+  <Step title="Save the sequence">
+    Click **Save sequence**. The campaign now stores the full sequence and sends it according to the delays you set.
+  </Step>
+</Steps>
+
+## Track send progress and sent recipients
+
+After you send or schedule, picobean tracks delivery status so you know what happened to each message.
+
+<Steps>
+  <Step title="View sent recipients">
+    Inside the campaign, open the **Sent recipients** tab. This lists everyone who received an email from this campaign, with the platform icon and email address.
+  </Step>
+  <Step title="Check delivery status">
+    Each row shows a status badge:
+
+    | Status | Meaning |
+    | --- | --- |
+    | Opened | The recipient opened the email |
+    | Not opened | Delivered but not yet opened |
+    | Bounced | The email could not be delivered |
+    | Spammed | The message was marked as spam by the recipient's server |
+  </Step>
+  <Step title="Open a conversation">
+    Click any recipient to open the conversation timeline. You will see the full message history, replies, and any follow-up steps that triggered.
+  </Step>
+</Steps>
+
+If a send is in progress, the interface shows a loading state until the batch is fully queued. You can continue working in picobean while the messages are delivered in the background.
+
+## Next steps
+
+- [Create templates and signatures](/email/templates-and-signatures) to build reusable outreach messages.
+- [Connect your mailbox](/email/connect-mailbox) to send from your own domain and improve deliverability.
+- [Review conversations and follow-ups](/email/conversations-and-follow-ups) to reply to creators and track open rates.

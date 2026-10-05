@@ -1,0 +1,85 @@
+---
+title: "Automate creator replies and negotiation with the AI agent"
+sidebarTitle: "AI Outreach Agent"
+description: "Configure picobean's seeding agent to read creator replies, draft or auto-send responses, negotiate fees within your budget, and send campaign guides."
+---
+
+The **seeding agent** reads every creator reply in a campaign. It identifies what the creator wants (to accept, counter-offer, ask a question, or decline), then drafts a response or sends one automatically, based on your rules. This page explains each setting and how to approve the agent's drafts.
+
+<Note>
+  The agent is part of Campaigns, which require the **Enterprise** plan and a linked mailbox. Save the campaign before you configure budget and agent settings.
+</Note>
+
+## Key concepts
+
+| Term | Meaning |
+| --- | --- |
+| **Reply intent** | How the agent reads a reply: **Accepts**, **Counter-offer**, **Question**, **Declines**, **Not a negotiation**, or **Unclear**. |
+| **Approval queue** | Agent drafts that are waiting for a person to approve them. |
+| **Fee cap** | The maximum fee per creator that the agent can accept on its own. |
+| **Negotiation round** | One exchange of offer and counter-offer. |
+
+## Choose how the agent handles replies
+
+In **Agent configuration**, set **AI reply handling**:
+
+| Mode | Behavior |
+| --- | --- |
+| **Create drafts — review before sending** | The agent analyzes replies and drafts responses. You approve each one. |
+| **Auto-send when eligible** | The agent sends automatically when your conditions are met. All other replies wait for you. |
+| Off | The agent does not analyze replies or create drafts. |
+
+In auto mode, fine-tune which actions the agent can send by itself: **Auto-send acceptances**, **Auto-send counters**, **Auto-close on decline**, **Auto-send campaign guide**, and **Auto-send content review feedback**.
+
+## Negotiation settings
+
+| Setting | What it controls |
+| --- | --- |
+| **Total budget**, **Currency** | The campaign budget the agent must stay within. |
+| **Per-creator fee cap** | The highest fee the agent can accept for one creator. |
+| **Negotiation strength** | **High — hold firm (small moves)**, **Medium — meet in the middle**, or **Low — close fast (bigger moves)**. |
+| **Opening offer** | The starting offer the agent uses when your email does not include the `{{fee}}` variable. |
+| **Max negotiation rounds** | 1 to 10 rounds before the agent hands the deal to you. |
+| **Follow-up delay** | 0 to 60 days to wait before drafting a follow-up when there is no reply. 0 turns follow-ups off. |
+| **Agent instructions** | Brand tone, must-have terms, and anything the agent must not mention. |
+
+Select **Save settings** to apply your changes.
+
+## When the agent asks for you
+
+The agent always routes a reply to a person when it cannot decide safely. For example:
+
+- **Low confidence in the AI reading** or **Reply intent is unclear**
+- **Currency differs from the campaign**
+- **Over the per-creator cap** or **Over the campaign budget**
+- **Questions need a human answer**
+- **Max negotiation rounds reached**
+- **Creator asked for a fee on a gifted campaign**
+- **Draft failed the safety check**
+
+## Approve agent drafts
+
+<Steps>
+  <Step title="Open the approval queue">
+    Select **View approval queue**, or open a conversation flagged **Needs approval**.
+  </Step>
+  <Step title="Check the agent's reasoning">
+    Review **Why this needs you**, **How the AI read the reply**, its **Confidence**, and the **Mentioned amount** and **Proposed amount**.
+  </Step>
+  <Step title="Decide">
+    Choose **Approve & send**, **Edit & send**, **Send as is**, or **Reject** (with an optional reason). To mark the draft as reviewed without sending anything, choose **Reviewed · no action**.
+  </Step>
+</Steps>
+
+<Warning>
+  Approving or editing a draft records the amount in the deal ledger and the campaign budget. If the amount exceeds the budget, you must confirm a budget override.
+</Warning>
+
+<Info>
+  Legacy auto-reply cannot run at the same time as the agent. If legacy auto-reply is on, picobean asks you to **Turn off & retry**.
+</Info>
+
+## Next steps
+
+- [Manage roster and deals](/campaigns/roster-and-deals)
+- [Review content drafts](/campaigns/content-review-and-payment)

@@ -1,0 +1,137 @@
+---
+title: "Track shipping, fulfillment, carriers, and delivery status"
+sidebarTitle: "Seeding and Shipping"
+description: "Manage product shipping in picobean campaigns: collect addresses, register tracking numbers, choose carriers, update fulfillment status, and export shipping CSVs."
+---
+
+After a creator confirms participation, the next step is to ship the product. picobean tracks every package from address collection through delivery, with a dedicated table for shipping details, tracking links, and CSV exports.
+
+<Note>
+  Campaigns are available on the **Enterprise** plan.
+</Note>
+
+## Open the shipping tab
+
+Inside a campaign, click **Shipping & Tracking** to open the fulfillment view. Only creators whose stage is **Confirmed** or later appear here. Prospects and merely-contacted creators are filtered out so the table matches your actual shipping workload.
+
+## Shipping summary cards
+
+At the top, four cards show the current state of fulfillment:
+
+| Card | Description |
+| --- | --- |
+| Address collected | Creators with a saved shipping address. |
+| Address missing | Confirmed creators who still need an address. |
+| Shipped | Packages that have a tracking number and are marked as shipped. |
+| Delivered | Packages marked as delivered. |
+
+These numbers update automatically when you change a creator's shipping status or save an address.
+
+## The shipping table
+
+The table lists one row per confirmed creator.
+
+| Column | Description |
+| --- | --- |
+| Creator ID | Handle and avatar. |
+| Creator name | Display name. |
+| Address | Street address from the saved shipping info. |
+| Tracking | Tracking number with a link to the carrier's official tracking page, if available. |
+| Carrier | The shipping carrier name. |
+| Link | Quick **Track** link that opens the carrier tracking page in a new tab. |
+| Status | Current fulfillment status. |
+| Updated | Timestamp of the last shipping-related change. |
+
+Use the search bar to filter by creator name, address, or tracking number. Use the **Status** dropdown to filter by a single fulfillment state.
+
+## Fulfillment statuses
+
+Click the **Status** cell in any row to change the fulfillment stage.
+
+| Status | Meaning |
+| --- | --- |
+| No address | The shipping address has not been collected. |
+| Address collected | The address is saved and ready for shipping. |
+| Shipped | The package has been sent. A tracking number is expected. |
+| Delivered | The package has arrived at the creator's address. |
+
+The table updates as soon as you change a status. If the change cannot be saved, the row goes back to its previous status and an error message appears.
+
+## Register or edit a tracking number
+
+Click **Register** in the **Tracking** column for a creator with no tracking number, or click an existing tracking number to edit it. A dialog opens with two fields:
+
+| Field | Description |
+| --- | --- |
+| Carrier | Choose from the dropdown. |
+| Tracking number | Enter the carrier tracking code. |
+
+### Supported carriers
+
+The dropdown includes:
+
+- USPS
+- UPS
+- FedEx
+- DHL
+- Amazon Logistics
+- Other
+
+Records that use Korean carriers (CJ대한통운, 한진택배, 롯데택배, 우체국택배, 쿠팡) or Royal Mail also keep working. If you select a supported carrier, the **Track** link opens the carrier's official tracking page directly. Unknown carriers do not generate a tracking URL.
+
+Click **Register** to save, or **Save changes** when editing. The table updates with the new tracking number and a clickable **Track** link.
+
+## Shipping details panel
+
+Click any row to open the right-hand details panel.
+
+### Address fields
+
+| Field | Description |
+| --- | --- |
+| Recipient name | Who should receive the package. |
+| Address | Street address (line 1 and line 2 are combined). |
+| City | City name. |
+| State | State or province. |
+| Zip code | Postal code. |
+| Phone number | Contact phone for delivery. |
+
+Edit any field, then click **Save** to store the address. Click **Clear address** to remove all saved address data and return the creator to **No address**.
+
+### Tracking section
+
+If a tracking number exists, the panel shows the carrier and tracking code with a **Track** link. Click **Edit tracking** to change the carrier or number.
+
+### Tracking events
+
+The panel shows a timeline of shipping-related deal events:
+
+| Event | When it appears |
+| --- | --- |
+| Address requested | When an address request email was sent. |
+| Address collected | When the address was saved. |
+| Shipping confirmed | When the shipping notice was sent. |
+| Package shipped | When the package was marked as shipped. |
+| Package delivered | When the package was marked as delivered. |
+
+Each event shows the timestamp and, when relevant, the carrier and tracking number.
+
+## Export shipping CSV
+
+Click **Download CSV** in the top-right of the shipping tab. The export includes the current filter scope:
+
+| Filter | CSV scope |
+| --- | --- |
+| All statuses | All confirmed creators. |
+| No address | Creators missing an address. |
+| Address collected | Creators with an address but not yet shipped. |
+| Shipped | Creators with shipped or delivered status. |
+| Delivered | Creators with delivered status. |
+
+The CSV includes creator name, handle, address, city, state, postal code, phone, recipient name, tracking number, carrier, and status. The download shows the row count and filename in a toast.
+
+## Next steps
+
+- [Review content and record payment](/campaigns/content-review-and-payment)
+- [Manage roster and deals](/campaigns/roster-and-deals)
+- [Campaign overview and progress funnel](/campaigns/overview)

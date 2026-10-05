@@ -1,0 +1,167 @@
+---
+title: "Review submitted content, guideline badges, and record payment"
+sidebarTitle: "Content and Payment"
+description: "Review creator drafts against campaign guidelines, inspect content with AI review badges, approve or request revisions, and record payouts in picobean."
+---
+
+After creators receive your product and produce content, you review their drafts against the campaign guideline, approve or request changes, and then record payment for paid collaborations. picobean provides an AI-assisted review panel and a payment ledger that tracks every payout.
+
+<Note>
+  Campaigns are available on the **Enterprise** plan.
+</Note>
+
+## Content review workflow
+
+The content review lifecycle moves through five states:
+
+| Status | Meaning |
+| --- | --- |
+| No guide yet | The campaign guide has not been sent. |
+| Guide sent | The guideline email was delivered to the creator. |
+| Draft under review | The creator submitted a draft and it is being reviewed. |
+| Revision requested | The draft did not meet the guideline and changes were requested. |
+| Content approved | The draft passed review and the creator is cleared to post. |
+
+These states appear in the roster **Content** column and in the content review tab.
+
+## Set the campaign guideline
+
+Before creators can submit drafts, they need the campaign guideline. The guideline is set during campaign creation or edited later in the Brief card under **Content guideline**.
+
+| Guideline field | What to include |
+| --- | --- |
+| Must include | Elements that must appear, like "Product in the first 3 seconds". |
+| Must avoid | Prohibited elements, like "Competitor products" or "Medical claims". |
+| Required hashtags | Hashtags the creator must use, for example #ad. |
+| Required mentions | Accounts to tag, for example @brand. |
+| Required links | URLs to include in the caption or bio. |
+| Format | Technical requirements like "Vertical 9:16, captions on". |
+| Disclosure | How to mark the post as an ad, like "#ad in the caption". |
+| Min length | Minimum video duration in seconds. |
+| Max length | Maximum video duration in seconds. |
+| Draft deadline | When the creator must submit the first draft. |
+| Posting window | The date range when the creator should publish. |
+| Notes | Tone, references, or any other instruction. |
+
+Concrete, checkable items let the AI review drafts automatically. Vague instructions require manual review.
+
+## AI content review badge
+
+When a creator submits a draft, picobean runs an AI review against the guideline. The result appears as a badge:
+
+| Badge | Meaning |
+| --- | --- |
+| Approved | The draft meets every checkable guideline item. |
+| Needs changes | One or more items failed. A revision request is generated. |
+| Unclear | The AI could not verify every item with confidence. |
+
+The badge shows the number of passed checks out of the total. Example: **5/7**.
+
+## Inspect panel
+
+Click a content row or badge to open the **Inspect panel**. The panel has two sections:
+
+### Post preview (left side)
+
+- Thumbnail image or video preview
+- Creator name and handle
+- Link to open the post on the original platform
+- Caption text
+- Hashtags as tag chips
+
+### AI review details (right side)
+
+- **Summary**: A short narrative of what the AI found.
+- **Verdict**: Approved, Needs changes, or Unclear.
+- **Not a campaign draft warning**: Appears if the AI thinks the submitted content does not match this campaign.
+- **Revision items**: A bulleted list of what must change before approval.
+- **Checks**: Each guideline item with its result:
+  - **Pass**: The item was found and verified.
+  - **Fail**: The item was missing or violated.
+  - **Unknown**: The AI could not verify it.
+- **Review details**: The confidence percentage, review round, and review time.
+
+Use the left and right arrows at the top of the panel to move between creators' submissions without closing the panel.
+
+## Manual review actions
+
+Even when the AI reviews a draft, you can override the decision:
+
+- **Approve**: Mark the content as approved regardless of AI findings.
+- **Request revision**: Send feedback to the creator asking for changes.
+- **Add custom feedback**: Write specific revision notes that the AI did not generate.
+
+The AI review is a recommendation, not a final decision. You always have the last word.
+
+## Payment tab
+
+Open **Payment** inside a campaign to see the payout list. Only creators with an **Agreed** deal status or later appear here.
+
+### Payment groups
+
+Creators are grouped by their payout lifecycle:
+
+| Group | Meaning |
+| --- | --- |
+| Not due yet | Deal is not fully agreed or content is not confirmed. |
+| Content not uploaded | Deal is agreed but the creator has not published the content. |
+| Unpaid | Content is uploaded and the fee is confirmed but not yet recorded as paid. |
+| Paid | The payout has been recorded. |
+
+Click a group header to expand or collapse it. Each group shows the creator count in parentheses.
+
+### Payment table columns
+
+| Column | Description |
+| --- | --- |
+| Checkbox | Select multiple creators for bulk payment recording. Paid rows are disabled. |
+| Creator ID | Handle and avatar. |
+| Creator name | Display name. |
+| Item sent | Date the product was shipped. |
+| Delivered | Date the product was delivered. |
+| Uploaded | Date the content was published. |
+| Content link | Link to view the published content. If multiple posts exist, the count is shown in parentheses. |
+| Payout | The fee amount. For unpaid creators, you can edit the amount before marking paid. For paid creators, it shows the recorded amount and paid date. |
+| Actions | **Mark as paid** or **Undo** (to revert a paid status). |
+
+### Record a single payout
+
+- Find the creator in the **Unpaid** group.
+- Edit the **Payout** amount if needed (defaults to the agreed fee).
+- Click **Mark as paid**.
+- A toast confirms the record. The creator moves to the **Paid** group.
+
+### Record payouts in bulk
+
+- Select unpaid creators with the checkboxes.
+- The bottom bar shows the count and a **Mark selected as paid** button.
+- Click the button. The system processes the batch and shows a progress toast.
+- When finished, a summary toast reports how many were recorded and how many failed.
+
+<Warning>
+  The Payment tab records that a payout happened. It does **not** transfer money. You must send the actual payment through your own finance process.
+</Warning>
+
+### Undo a payout
+
+In the **Paid** group, click **Undo** on a creator's row. The creator returns to **Unpaid** and the budget summary is updated.
+
+### Budget bar
+
+Above the payment table, a progress bar shows:
+
+- **Paid out of budget**: Green segment for recorded payouts.
+- **Committed**: Blue segment for confirmed deals that are not yet paid.
+- Budget numbers: total spent, committed amount, and outstanding amount.
+
+If no budget was set in the campaign brief, the bar is not shown.
+
+## Performance review
+
+After content is uploaded, the **Performance review** section shows matched content with engagement metrics. You can filter by seeding keywords or product names to find the relevant posts. Each matched post shows views, likes, comments, shares, and a link to the live content.
+
+## Next steps
+
+- [Track seeding and shipping](/campaigns/seeding-and-shipping)
+- [Manage roster and deals](/campaigns/roster-and-deals)
+- [Campaign overview and progress funnel](/campaigns/overview)

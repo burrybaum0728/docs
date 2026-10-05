@@ -1,0 +1,85 @@
+---
+title: "Manage your picobean plan, credits, and invoices"
+sidebarTitle: "Billing"
+description: "Check your current picobean plan and credit balance, compare plans, upgrade through Stripe Checkout, and view or download past invoices."
+---
+
+The **Usage & Billing** tab in picobean **Settings** shows your current plan, your credit balance, your invoices, and a comparison of all plans. This page explains how credits are used, how to upgrade, and how to manage your subscription. For a full list of which features each plan includes, see [Plans and plugins](/get-started/plans-and-plugins).
+
+## Key concepts
+
+| Term | Meaning |
+| --- | --- |
+| **Plan** | Your organization's subscription level: Free, Basic, or Enterprise. |
+| **Credits** | The monthly allowance used by table generation and daily monitoring. |
+| **Monthly cap** | The number of credits your plan includes each month. |
+| **Customer Portal** | The Stripe page where you update payment details and cancel a subscription. |
+
+## View your current plan
+
+Open **Settings** and select **Usage & Billing**. The **My Plan** card shows:
+
+- Your current plan name with an **Active** badge.
+- The subscription end date, if you have a paid subscription.
+- Your remaining credits and monthly cap, shown as a fraction such as `150 / 300` and a progress bar.
+
+## How credits are used
+
+Select **View more** in the **My Plan** card to see **Credit costs**.
+
+| Action | Credit cost |
+| --- | --- |
+| Table generation | 1 credit per 25 rows, rounded up. For example, 100 rows cost 4 credits. |
+| Daily monitoring | 1 credit per day. |
+
+## Compare plans
+
+The **Compare our plans** section lists each plan with its included features. Features that need a higher plan are shown as locked.
+
+| Plan | Price | Credits per month | Highlights |
+| --- | --- | --- | --- |
+| **Free** | \$0 | 10 | Saved lists, folders, memos, translation. |
+| **Basic** | \$60 | 300 | AI search, monitoring, CSV download, viral content dashboard. |
+| **Enterprise** | \$499 | 3,000 | Campaigns, email outreach, mailbox management, team members, private DB, content upload. |
+
+## Upgrade your plan
+
+<Steps>
+  <Step title="Open Usage & Billing">
+    Go to **Settings** > **Usage & Billing**.
+  </Step>
+  <Step title="Choose a plan">
+    In the plan comparison, select **Upgrade** on the plan you want. For some Enterprise purchases the button reads **Start payment**.
+  </Step>
+  <Step title="Complete checkout">
+    Enter your payment details in Stripe Checkout. Your new plan is active as soon as payment succeeds.
+  </Step>
+</Steps>
+
+## Manage your subscription
+
+To update your payment method or cancel your subscription, select **Manage subscription** in the **Payment** section. This opens the Stripe Customer Portal.
+
+<Note>
+  Payments are handled by Stripe. picobean does not store your card details.
+</Note>
+
+## View invoices
+
+The **Invoices** section lists past invoices. Use the month selector to choose a billing period.
+
+| Column | Description |
+| --- | --- |
+| **Date** | Invoice date. |
+| **Description** | Line item description. |
+| **Status** | For example, **Paid**. |
+| **Amount** | Invoice total. |
+| **Invoice** | Link to the invoice PDF. |
+
+If there are no invoices for the selected month, the table shows **No invoices for this month.**
+
+## Next steps
+
+- [Compare features by plan](/get-started/plans-and-plugins)
+- [Invite team members](/account/team-and-members)
+- [Connect a mailbox](/email/connect-mailbox)

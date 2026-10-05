@@ -1,0 +1,81 @@
+---
+title: "Find creators with natural-language AI search in picobean"
+sidebarTitle: "AI Search"
+description: "Describe the creators or content you want in plain language, and the picobean agent turns your prompt into search criteria and returns matching results."
+---
+
+**Search** is where most creator research starts in picobean. You describe the accounts or content you want in plain language. The picobean agent turns that prompt into structured criteria, collects matching creators, and returns a ranked results table. This page covers how to write a prompt and run a search. It also explains what happens while the agent works.
+
+## Key concepts
+
+| Term | Meaning |
+| --- | --- |
+| **Prompt** | Your plain-language request, for example "K-beauty creators in the US with 50K to 300K followers who post skincare routines". |
+| **Search type** | Choose **Account** to find creators or **Content** to find posts. |
+| **Criteria** | The structured conditions the agent extracts from your prompt (followers, country, category, and so on). See [Criteria and filters](/account-search/criteria-and-filters). |
+| **Credit** | The usage unit for searches. The search screen shows the credit cost before you submit. |
+| **Search history** | Every search you run is saved, so you can reopen its results later. |
+
+<Note>
+  Search is part of the **Influencer Affiliate** plugin, which is turned on by default. If **Search** is missing from your sidebar, enable the plugin in [Settings](/account/settings).
+</Note>
+
+## Run a search
+
+<Steps>
+  <Step title="Open Search">
+    In the sidebar, select **Search**.
+  </Step>
+  <Step title="Choose a search type">
+    Select **Account** to find creators or **Content** to find posts. The input placeholder changes to match your choice: **Describe the accounts you're looking for...** or **Describe the content you're looking for...**.
+  </Step>
+  <Step title="Write your prompt">
+    Describe your target creators. If you need ideas, select **Show example library** to browse sample prompts.
+  </Step>
+  <Step title="Preview and submit">
+    Select **Preview search** to check how the agent reads your prompt. Then select **Submit search**.
+  </Step>
+</Steps>
+
+<Info>
+  The results screen currently notes that **only TikTok is supported** for agent search. {/* TODO: verify current platform coverage */}
+</Info>
+
+## What happens after you submit
+
+While the agent works, the screen shows its progress in three stages:
+
+1. **Analyzing your search request**: the agent parses your intent and filter criteria.
+2. **Setting up data collection**: the agent prepares to find creators that match.
+3. **Agent deployed — searching for creators**: the agent searches TikTok for matching accounts.
+
+As results come in, they fill the results table. For a walkthrough of the table, see [Results and account details](/account-search/results-and-account-details).
+
+## Write better prompts
+
+| Vague prompt | Better prompt |
+| --- | --- |
+| "beauty influencers" | "US-based skincare creators with 50K to 300K followers who post GRWM and routine videos" |
+| "fitness people" | "Korean home-workout creators with an email in their bio and an engagement rate above 5%" |
+| "food" | "Japanese food creators who have not been sponsored by a convenience store brand recently" |
+
+<Tip>
+  Include these four things in a prompt: **who** (niche or persona), **where** (country or language), **size** (follower range), and **must-haves** (contact email, content style, brands to include or exclude). The more specific your prompt, the more accurate the criteria.
+</Tip>
+
+## Credits and plan limits
+
+- The search screen shows the credit cost of a request (for example, **1 Credit**) before you submit.
+- If your balance is too low, an **Insufficient Credits** dialog opens. From there you can top up or upgrade. See [Billing](/account/billing).
+- Some actions need a **Basic** plan or higher: agent search, **Add more rows**, **Monitor dataset**, **Request agent**, and **CSV download**. See [Plans and plugins](/get-started/plans-and-plugins).
+
+## Email alerts and research requests
+
+- Use **Toggle email alerts** to get an email when a long-running search finishes or when its results update.
+- To ask a broader question than a creator search, use the **Research question** form. After you submit it, the screen shows **Research submitted**. {/* TODO: verify availability per plan */}
+
+## Next steps
+
+- [Refine your criteria and filters](/account-search/criteria-and-filters)
+- [Review results and account details](/account-search/results-and-account-details)
+- [Save creators to folders](/influencer/saved)

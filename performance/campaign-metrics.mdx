@@ -1,0 +1,213 @@
+---
+title: "Measure campaign results on the Performance tab"
+description: "Review email funnels, roster progress, matched creator content, and sent email history on the Performance tab of every picobean campaign."
+sidebarTitle: "Campaign Metrics"
+---
+
+Each campaign in picobean has its own **Performance** tab where you track outreach results, roster progress, and the content creators publish after seeding. The numbers update automatically as emails are sent and creators upload posts, so you do not need to build a separate report.
+
+## Prerequisites
+
+- An Enterprise plan (Campaigns are Enterprise-only).
+- At least one campaign created with a roster.
+- Some creators must be emailed or marked as seeded so the funnels have data to display.
+
+## Review email results
+
+Open a campaign and select the **Performance** tab. The top of the page shows two connected blocks for outreach metrics.
+
+### Email performance funnel
+
+This is a connected bar chart that breaks down every message sent through the campaign into four stages.
+
+| Stage | Description |
+| --- | --- |
+| **Total sent** | Number of emails the campaign dispatched. |
+| **Total delivered** | Messages that reached the recipient’s mailbox. |
+| **Total open** | Messages opened by the recipient. |
+| **Total replied** | Messages that received a reply. |
+
+- Each bar is sized relative to the total sent count.
+- A conversion percentage is shown between stages (for example, 72% from sent to delivered).
+- The chart refreshes automatically when new emails are sent.
+
+### Campaign email summary
+
+Beside the funnel, stacked metric cards show the same four numbers with an extra sublabel indicating the rate against total sent.
+
+- **Total sent**: the raw count.
+- **Total delivered**, **Total open**, **Total replied**: the count plus "X% of sent".
+
+<Note>
+  Email delivery, open, and reply tracking requires a connected mailbox. See [Connect mailbox](/email/connect-mailbox) if these numbers stay at zero.
+</Note>
+
+## Track roster progress
+
+Below the email section, the **Campaign progress** funnel shows how many creators have moved through each stage of the workflow.
+
+| Stage | Meaning |
+| --- | --- |
+| **Target List** | Creators added to the roster. |
+| **Sent (Email / DM)** | Outreach sent. |
+| **Negotiating** | Terms are being discussed. |
+| **Confirmed** | Collaboration confirmed. |
+| **Package sent** | Product shipped. |
+| **Content confirmed** | Post draft or guideline approved. |
+| **Uploaded** | Content is live. |
+
+- The first bar is always 100% and equals the total number of creators on the target list.
+- Each following bar shrinks or grows based on how many creators reached that stage.
+- The conversion rate between stages is displayed above each bar.
+- When the roster is empty, the funnel shows zeros and offers a **View recommendations** button to discover creators.
+
+<Steps>
+  <Step title="Filter by stage">
+    If the funnel shows a clickable stage, select it to filter the roster table on the Target List tab to creators in that exact stage.
+  </Step>
+  <Step title="Refresh after roster edits">
+    When you move a creator to a new status elsewhere in the app, the funnel updates within a few seconds.
+  </Step>
+</Steps>
+
+## Inspect uploaded content performance
+
+The **Content performance** section lists every post matched to the campaign after creators are marked as seeded.
+
+### Keyword filter
+
+Content is filtered automatically by keywords saved in the campaign brief. The source of the current filter is shown as a small hint:
+
+| Source hint | Meaning |
+| --- | --- |
+| Keyword filter is cleared | Every post published after seeding is counted. |
+| Auto-filtered by the campaign's product names | The campaign product name is used as a keyword. |
+| Auto-filtered by your org's brand keywords | Organization brand keywords are applied. |
+| No keywords set | Every post published after seeding is counted. |
+
+- You can add custom keywords with the keyword input at the top of the section.
+- Removing all keywords clears the filter and counts every matched post.
+- Adding a keyword overrides the automatic source.
+
+### Content table columns
+
+The table shows one row per matched post with the following columns.
+
+| Column | What it shows |
+| --- | --- |
+| **Preview** | Thumbnail and title of the post. |
+| **Account** | Creator name, handle, platform badge. |
+| **Upload date** | Date the post went live. |
+| **Views** | View count. |
+| **Likes** | Like count. |
+| **Comments** | Comment count. |
+| **Shares** | Share / repost count. |
+| **Bookmarks** | Save count. |
+| **ER** | Engagement rate computed from likes and comments relative to views. |
+
+- Sort the table by any column via the header menu.
+- Rows marked with a **NEW** pill indicate content detected since your last visit.
+- Click a row to open a detail panel with the post image, caption, hashtags, and account info.
+
+### Timeline chart
+
+A cumulative line chart shows the campaign’s content trajectory over time.
+
+- Choose the metric at the top of the chart: **Views**, **Likes**, **Bookmarks**, or **Shares**.
+- Data is bucketed by day for short campaigns and by week for campaigns spanning more than 21 days.
+- Each point is cumulative: it adds new matched content to the running total.
+
+### Status donut chart
+
+A donut chart next to the timeline shows the current roster status distribution.
+
+| Slice | Color | Meaning |
+| --- | --- | --- |
+| **Posted** | Green | Creators whose matched content is live. |
+| **Product sent · awaiting post** | Light green | Seeded creators who have not posted yet. |
+| **Contacted** | Blue | Outreach sent but not yet seeded or confirmed. |
+| **Prospect** | Gray | Added to roster but not yet contacted. |
+| **Not participating** | Gray | Declined or removed. |
+
+- Hover a slice to see the exact count and percentage.
+- Click a creator name in the legend to open their profile page.
+
+### Add content manually
+
+If a creator shared a URL that the system has not crawled yet, you can paste the URL into **Add by URL**.
+
+- For URLs that include a handle, the post is added immediately.
+- For URLs with no handle (for example, some Instagram share links), a **Creator handle needed** prompt appears. Type the creator's `@handle` and click **Add** so picobean can collect the post.
+- Posts added this way appear in the table once they are collected.
+
+<Warning>
+  Removing content from the performance table excludes it from stats. To undo, re-add the URL.
+</Warning>
+
+<Steps>
+  <Step title="Export content results">
+    Click **Download CSV** at the top-right of the content table to export all matched posts with their view, like, comment, share, and save counts.
+  </Step>
+</Steps>
+
+## Review sent recipients
+
+The **Sent recipients** section lists every unique email address that received a message from the campaign.
+
+### Table columns
+
+| Column | What it shows |
+| --- | --- |
+| **Recipient** | Avatar, display name, and platform handle if matched. |
+| **Email** | The address that received the message. |
+| **Sent emails** | Total number of emails sent to this address. |
+| **Last sent** | Timestamp of the most recent message. |
+| **Recent subject** | Subject line of the latest email. |
+| **Status** | Delivery status and follow-up state. |
+
+### Delivery status badges
+
+| Badge | Meaning |
+| --- | --- |
+| **Opened** | Recipient opened at least one email. |
+| **Not opened** | Delivered but not yet opened. |
+| **Bounced** | The email could not be delivered. |
+| **Spammed** | Marked as spam by the recipient’s server. |
+
+### Follow-up badges
+
+| Badge | Meaning |
+| --- | --- |
+| **Replied** | The creator replied. |
+| **Follow-up** | A follow-up email was sent. |
+| **Resend queued** | A resend is scheduled. |
+| **No follow-up** | No additional email was sent after the first message. |
+
+### Conversation timeline
+
+Selecting a recipient opens a side panel with a timeline of every message exchanged with that address.
+
+| Event | Meaning |
+| --- | --- |
+| **Email sent** | First outbound message. |
+| **Reply sent** | Your team sent a reply. |
+| **Reply received** | The creator replied. |
+
+<Note>
+  The system tries to match each email to a creator profile automatically. If matching fails, the recipient still appears in the list with the email address only.
+</Note>
+
+## Result
+
+After opening the Performance tab you should see:
+
+- A clear email funnel with sent, delivered, opened, and reply counts.
+- A roster progress funnel from target list to uploaded content.
+- A ranked list of matched creator content with sortable columns, a cumulative timeline, and a status donut chart.
+- A complete sent-recipients list with delivery status and conversation timelines.
+
+## Next steps
+
+- [Manage the campaign roster and deals](/campaigns/roster-and-deals)
+- [Review content and process payments](/campaigns/content-review-and-payment)
+- [Check conversations and follow-ups](/email/conversations-and-follow-ups)

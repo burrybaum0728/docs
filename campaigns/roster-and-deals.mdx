@@ -1,0 +1,123 @@
+---
+title: "Manage campaign roster, deals, notes, and budget"
+sidebarTitle: "Roster and Deals"
+description: "Add and remove creators, edit roster stages, negotiate deals, set fees, track budget progress, and write notes per creator in picobean campaigns."
+---
+
+The campaign roster is the list of creators you are working with. You add creators from search or Discover, track each person's stage, manage deal negotiation and fees, attach notes, and watch the budget panel update in real time.
+
+<Note>
+  Campaigns are available on the **Enterprise** plan.
+</Note>
+
+## Add creators to the roster
+
+<Steps>
+  <Step title="Open the target list">
+    Inside a campaign, open the **Target list** or **Recommendations** tab.
+  </Step>
+  <Step title="Search or browse">
+    Use the **AI search** prompt bar to describe creators, or open the **Discover** panel to browse indexed profiles.
+  </Step>
+  <Step title="Add to campaign">
+    Click **Add** on a creator card. The creator appears in the roster with stage **Prospect**.
+  </Step>
+</Steps>
+
+### Bulk add via Discover
+
+Go to **Campaign** > your campaign > **Bulk**, or open `/campaign/bulk`. This view lets you search and select creators in bulk, review your selection, and add them to the campaign roster in one action.
+
+## Remove a creator
+
+In the roster table, click the **Remove** action on a creator's row. A confirmation dialog appears because removal deletes the deal history and shipping data for that person. Click **Remove** to confirm, or **Cancel** to keep them.
+
+## Roster columns and fields
+
+The roster table shows one row per creator.
+
+| Column | Description |
+| --- | --- |
+| Creator ID | Handle and avatar. |
+| Creator name | Display name or account name. |
+| Channel | TikTok or Instagram icon. |
+| Status | The current roster stage chip. |
+| Deal | Deal status and fee summary. Click to open the deal editor. |
+| Shipping | Address collection status: Address needed, Address requested, or Address ready. |
+| Content | Content review status: No guide yet, Guide sent, Draft under review, Revision requested, or Content approved. |
+| Notes | Your private notes about this creator. Click to edit. |
+| Actions | Remove, open account details, or jump to the conversation. |
+
+Click any column header to sort. Use the search bar to filter by name, handle, or email.
+
+## Roster statuses
+
+Each creator has one visible stage. Click the status chip to change it.
+
+| Stage | Label | Icon | What it means |
+| --- | --- | --- | --- |
+| Prospect | Prospect | Minus | Added to roster, no outreach sent. |
+| Contacted | Contacted | Single check | Outreach email or DM sent. |
+| Negotiating | Negotiating | Clock | Conversation in progress. |
+| Confirmed | Confirmed | Double check | Deal agreed or participation confirmed. |
+| Product sent | Product sent | Single check | Package shipped. |
+| Posted | Posted | Double check | Content uploaded and matched. |
+| Declined | Not participating | X | Creator declined or was removed from the campaign. |
+
+When you change a creator to **Negotiating** or **Confirmed**, you are updating the deal state. When you change to **Product sent** or **Posted**, you are updating the roster status. Moving a creator from **Not participating** directly to **Product sent** or **Posted** triggers a confirmation dialog.
+
+## Deal editor
+
+Click the **Deal** cell on any roster row to open the deal editor.
+
+| Field | Description |
+| --- | --- |
+| Deal status | Select from the dropdown: No offer, Offer sent, Negotiating, Agreed, Declined, Stalled. |
+| Offered fee | The amount you originally offered. |
+| Agreed fee | The final amount both sides agreed on. |
+| Currency | USD, KRW, EUR, or JPY. |
+| Note | Optional memo about this deal change. |
+
+Click **Save** to commit. The deal history panel below the fields shows a chronological ledger of every change, including who made it (agent, user, or system) and when. If the agreed fee pushes the campaign over budget, the editor shows a **budget override** warning and asks for an override reason before saving.
+
+### Deal statuses
+
+| Status | Meaning |
+| --- | --- |
+| No offer | No offer has been made yet. |
+| Offer sent | An outreach with an offer was sent. |
+| Negotiating | The creator replied and terms are being discussed. |
+| Agreed | Both sides accepted the terms. |
+| Declined | The creator or agent declined the collaboration. |
+| Stalled | No reply after follow-ups. |
+
+## Budget panel
+
+The budget panel on the Overview tab shows how the campaign budget is allocated.
+
+| Metric | Meaning |
+| --- | --- |
+| Total budget | The budget you set in the brief. |
+| Allocated | Sum of all agreed fees. |
+| Confirmed | Sum of fees for creators with deal status **Agreed**. |
+| Pending | Creators in negotiation whose fee is not yet fixed. |
+| Reserved | Sum of all non-declined deals with a fee amount. |
+| Offered, not yet answered | Creators who received an offer but have not responded. This amount is not reserved. |
+| Available | Budget remaining after reservations. |
+| Remaining | Budget remaining after confirmed payments. |
+
+The panel also lists recent deals with their status, fee, and relative timestamp. Click **View approval queue** to jump to the Mailbox tab and review any pending agent drafts.
+
+## Notes
+
+Click the **Notes** cell on a roster row to add or edit a private note. Notes are only visible in the roster and are not sent to creators. They are useful for recording personality impressions, shipping preferences, or communication reminders.
+
+## Contact hints
+
+In the roster or conversation views, a small icon next to a creator's email indicates whether the email is verified or whether a direct message channel is available. This helps you choose the best outreach method.
+
+## Next steps
+
+- [Track seeding and shipping](/campaigns/seeding-and-shipping)
+- [Review content and record payment](/campaigns/content-review-and-payment)
+- [Campaign overview and progress funnel](/campaigns/overview)

@@ -1,0 +1,92 @@
+---
+title: "Campaign overview, progress funnel, and status tracking"
+sidebarTitle: "Overview"
+description: "Understand picobean campaigns, the campaign list page, the 7-stage progress funnel, roster statuses, and how to read the Overview tab. Enterprise plan only."
+---
+
+A picobean campaign organizes your end-to-end influencer collaboration from brief to payout. Each campaign has a brief, a target roster of creators, a set of email templates, and tabs that track progress across outreach, negotiation, shipping, content review, and payment.
+
+<Note>
+  Campaigns are available on the **Enterprise** plan. Basic and Free plans do not see the Campaign menu item.
+</Note>
+
+## Campaign list page
+
+Open **Campaign** from the sidebar to see every campaign in your workspace.
+
+| Column | Description |
+| --- | --- |
+| Campaign | Title, description preview, and creation date. |
+| Status | Current campaign state, such as Draft or Active. |
+| Type | Unpaid seeding or Paid seeding. |
+| Progress | Visual bar showing how far the roster has moved through the funnel. |
+| Due | Campaign end date, if set. |
+| Actions | Open the campaign detail view. |
+
+Click a campaign title to open its **Overview** tab.
+
+## Overview tab layout
+
+The campaign detail page opens on the Overview tab. It is split into cards:
+
+- **Brief**: Editable campaign name, description, products, dates, budget, target channel, and target country.
+- **To do now**: Open tasks that need a human, such as AI drafts waiting for approval or inbound replies that need an answer.
+- **Campaign progress**: The 7-stage funnel showing how many creators are at each stage.
+- **Seeding goal progress**: Percentage of the target creator count that has confirmed participation or progressed further.
+- **Budget**: Total budget, allocated amount, remaining, and a list of confirmed deals.
+- **Assigned templates**: Which first send, reply, campaign guide, and product shipping templates are assigned.
+
+Press **Edit** on the Brief card to change fields. Press **Save** to commit, or **Cancel** to discard.
+
+## Campaign progress funnel
+
+The funnel shows how creators move from the target list to published content. Each stage is exclusive: a creator only counts in the highest stage they have reached.
+
+| Stage | UI label | What it means |
+| --- | --- | --- |
+| Target List | Target List | Added to the roster but outreach has not been sent. |
+| Sent | Sent (Email / DM) | First outreach email or DM was sent. |
+| Negotiating | Negotiating | The creator replied and a conversation is in progress. Also includes guide sent, draft submitted, or revision requested. |
+| Confirmed | Confirmed | Deal is agreed (for paid) or participation is confirmed (for unpaid). |
+| Package Sent | Package sent | Product has been shipped to the creator. |
+| Content Confirmed | Content confirmed | The draft content passed review and is approved to post. |
+| Uploaded | Uploaded | The creator published the content and picobean matched it to the campaign. |
+
+The funnel also shows conversion rates between stages as percentages.
+
+Click **View recommendations** to open the target list and add more creators.
+
+## Roster lifecycle stages
+
+Each creator on the roster has one visible stage. The stage is derived from a combination of the stored roster status and the deal negotiation state.
+
+| Stage | Badge color | Icon | When to use |
+| --- | --- | --- | --- |
+| Prospect | Slate gray | Minus | No outreach sent yet. |
+| Contacted | Sky blue | Single check | Outreach was sent. |
+| Negotiating | Amber | Clock | Conversation is ongoing. |
+| Confirmed | Lime green | Double check | Deal agreed or participation confirmed. |
+| Product sent | Sky blue | Single check | Package shipped. |
+| Posted | Lime green | Double check | Content uploaded and matched. |
+| Not participating | Rose red | X | Creator declined or was marked as declined. |
+
+Click a creator's status chip to open a popover and change the stage by hand. Picking **Negotiating** or **Confirmed** updates the deal state; picking **Product sent** or **Posted** updates the roster status. When you move a creator from **Not participating** straight to **Product sent** or **Posted**, a confirmation dialog warns you because it will treat them as participating again.
+
+## Understand the "To do now" card
+
+This card shows items that need your attention.
+
+| Section | What appears |
+| --- | --- |
+| Review AI draft | Agent-generated replies that are pending your approval or failed to send. |
+| Needs reply | Inbound replies the classifier recommends answering manually. |
+| Send guide | Creators who agreed and are waiting for the campaign guide. |
+| Request address | Confirmed creators whose shipping address has not been collected. |
+
+Each item shows the creator name, email, and a one-line summary of the needed action. Click **Review** to open the draft in the Mailbox, or **Handle in Mailbox** to jump into the conversation.
+
+## Next steps
+
+- [Create a campaign](/campaigns/create-campaign)
+- [Manage roster and deals](/campaigns/roster-and-deals)
+- [Track seeding and shipping](/campaigns/seeding-and-shipping)
