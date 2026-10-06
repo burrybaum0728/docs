@@ -3,9 +3,9 @@
   "theme": "willow",
   "name": "picobean",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#008CFF",
+    "light": "#61B8FF",
+    "dark": "#005499"
   },
   "favicon": "/favicon.svg",
   "navigation": {
