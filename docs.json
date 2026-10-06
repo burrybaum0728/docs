@@ -9,77 +9,156 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Get Started",
-        "pages": [
-          "index",
-          "quickstart",
-          "get-started/key-concepts",
-          "get-started/plans-and-plugins"
-        ],
-        "icon": "rocket"
-      },
-      {
-        "group": "Account Search",
-        "icon": "search",
-        "pages": [
-          "account-search/ai-search",
-          "account-search/criteria-and-filters",
-          "account-search/results-and-account-details",
-          "influencer/discover",
-          "influencer/saved"
+        "language": "en",
+        "default": true,
+        "groups": [
+          {
+            "group": "Get Started",
+            "icon": "rocket",
+            "pages": [
+              "index",
+              "quickstart",
+              "get-started/key-concepts",
+              "get-started/plans-and-plugins"
+            ]
+          },
+          {
+            "group": "Account Search",
+            "icon": "search",
+            "pages": [
+              "account-search/ai-search",
+              "account-search/criteria-and-filters",
+              "account-search/results-and-account-details",
+              "influencer/discover",
+              "influencer/saved"
+            ]
+          },
+          {
+            "group": "Campaigns",
+            "icon": "megaphone",
+            "pages": [
+              "campaigns/overview",
+              "campaigns/create-campaign",
+              "campaigns/roster-and-deals",
+              "campaigns/seeding-and-shipping",
+              "campaigns/content-review-and-payment"
+            ]
+          },
+          {
+            "group": "Email Outreach",
+            "icon": "mail",
+            "pages": [
+              "email/connect-mailbox",
+              "email/templates-and-signatures",
+              "email/send-and-schedule",
+              "email/conversations-and-follow-ups",
+              "email/ai-outreach-agent"
+            ]
+          },
+          {
+            "group": "Performance Monitoring",
+            "icon": "chart-line",
+            "pages": [
+              "performance/dashboard",
+              "performance/content-tracking",
+              "performance/campaign-metrics"
+            ]
+          },
+          {
+            "group": "Trend Research",
+            "icon": "trending-up",
+            "pages": [
+              "trends/trends",
+              "trends/meme-radar"
+            ]
+          },
+          {
+            "group": "Workspace & Account",
+            "icon": "settings",
+            "pages": [
+              "account/settings",
+              "account/team-and-members",
+              "account/billing"
+            ]
+          }
         ]
       },
       {
-        "group": "Campaigns",
-        "icon": "megaphone",
-        "pages": [
-          "campaigns/overview",
-          "campaigns/create-campaign",
-          "campaigns/roster-and-deals",
-          "campaigns/seeding-and-shipping",
-          "campaigns/content-review-and-payment"
+        "language": "ko",
+        "groups": [
+          {
+            "group": "시작하기",
+            "icon": "rocket",
+            "pages": [
+              "ko/index",
+              "ko/quickstart",
+              "ko/get-started/key-concepts",
+              "ko/get-started/plans-and-plugins"
+            ]
+          },
+          {
+            "group": "계정 검색",
+            "icon": "search",
+            "pages": [
+              "ko/account-search/ai-search",
+              "ko/account-search/criteria-and-filters",
+              "ko/account-search/results-and-account-details",
+              "ko/influencer/discover",
+              "ko/influencer/saved"
+            ]
+          },
+          {
+            "group": "캠페인",
+            "icon": "megaphone",
+            "pages": [
+              "ko/campaigns/overview",
+              "ko/campaigns/create-campaign",
+              "ko/campaigns/roster-and-deals",
+              "ko/campaigns/seeding-and-shipping",
+              "ko/campaigns/content-review-and-payment"
+            ]
+          },
+          {
+            "group": "이메일 아웃리치",
+            "icon": "mail",
+            "pages": [
+              "ko/email/connect-mailbox",
+              "ko/email/templates-and-signatures",
+              "ko/email/send-and-schedule",
+              "ko/email/conversations-and-follow-ups",
+              "ko/email/ai-outreach-agent"
+            ]
+          },
+          {
+            "group": "성과 모니터링",
+            "icon": "chart-line",
+            "pages": [
+              "ko/performance/dashboard",
+              "ko/performance/content-tracking",
+              "ko/performance/campaign-metrics"
+            ]
+          },
+          {
+            "group": "트렌드 리서치",
+            "icon": "trending-up",
+            "pages": [
+              "ko/trends/trends",
+              "ko/trends/meme-radar"
+            ]
+          },
+          {
+            "group": "워크스페이스 및 계정",
+            "icon": "settings",
+            "pages": [
+              "ko/account/settings",
+              "ko/account/team-and-members",
+              "ko/account/billing"
+            ]
+          }
         ]
-      },
-      {
-        "group": "Email Outreach",
-        "icon": "mail",
-        "pages": [
-          "email/connect-mailbox",
-          "email/templates-and-signatures",
-          "email/send-and-schedule",
-          "email/conversations-and-follow-ups",
-          "email/ai-outreach-agent"
-        ]
-      },
-      {
-        "group": "Performance Monitoring",
-        "icon": "chart-line",
-        "pages": [
-          "performance/dashboard",
-          "performance/content-tracking",
-          "performance/campaign-metrics"
-        ]
-      },
-      {
-        "group": "Trend Research",
-        "icon": "trending-up",
-        "pages": [
-          "trends/trends",
-          "trends/meme-radar"
-        ]
-      },
-      {
-        "group": "Workspace & Account",
-        "icon": "settings",
-        "pages": [
-          "account/settings",
-          "account/team-and-members",
-          "account/billing"
-        ]
-      },
-      "..."
+      }
     ]
   },
   "navbar": {

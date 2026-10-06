@@ -1,0 +1,66 @@
+---
+title: "picobean에서 저장된 크리에이터를 폴더와 메모로 정리"
+sidebarTitle: "Saved"
+description: "picobean Saved를 사용하여 크리에이터와 게시물을 폴더로 정리하고, 목록을 필터링하며, 팀 메모를 추가하고, CSV를 내보내고, 자체 크리에이터 데이터베이스를 업로드합니다."
+---
+
+**Saved**는 Search 또는 Discover에서 저장한 크리에이터와 게시물이 모이는 곳입니다. 폴더로 정렬하고, 목록을 필터링하며, 팀 전체가 볼 수 있는 메모를 추가할 수 있습니다. 저장된 크리에이터는 캠페인 아웃리치를 위해 준비됩니다. 이 페이지에서는 이들을 정리하고 사용하는 방법을 설명합니다.
+
+{/* SCREENSHOT TODO: 왼쪽에 폴더 목록과 메모가 있는 Saved 페이지를 캡처합니다.
+  <Frame>
+  <img src="/images/saved-folders.png" alt="폴더와 메모가 있는 Saved 페이지" />
+  </Frame>
+  */}
+
+## 핵심 개념
+
+| 용어 | 의미 |
+| --- | --- |
+| **Account / Content** | Saved의 두 탭: 저장된 크리에이터 또는 저장된 게시물입니다. |
+| **Folder** | "Q3 skincare shortlist"와 같은 이름의 크리에이터 목록입니다. |
+| **Data source** | Account 목록의 출처: **Saved**, **Subscription**, **Private DB**입니다. |
+| **Memo** | 팀이 공유하는 크리에이터에 대한 메모입니다. |
+
+## 데이터 소스
+
+| 소스 | 내용 | 요금제 |
+| --- | --- | --- |
+| **Saved** | Search와 Discover에서 저장한 크리에이터입니다. | 모든 요금제 |
+| **Subscription** | 구독 규칙에 따라 추천된 크리에이터입니다. | {/* TODO: verify plan */} |
+| **Private DB** | 직접 업로드한 크리에이터 목록입니다. | Enterprise |
+
+## 크리에이터 정리
+
+<Steps>
+  <Step title="Saved 열기">
+    사이드바에서 **Saved**를 선택합니다. **Account** 탭 또는 **Content** 탭을 선택합니다.
+  </Step>
+  <Step title="폴더 생성">
+    왼쪽 패널에서 **New Folder**를 선택합니다. 폴더를 마우스 오른쪽 버튼으로 클릭하거나 길게 눌러 **Rename folder** 또는 **Delete folder**를 실행합니다.
+  </Step>
+  <Step title="크리에이터를 폴더에 추가">
+    테이블에서 크리에이터를 선택한 뒤 작업 표시줄에서 **Add to Saved Folder** 또는 **New Folder**를 선택합니다. 폴더에서 제거하려면 해당 크리에이터를 선택하고 **Remove from list**를 선택합니다.
+  </Step>
+  <Step title="필터 및 정렬">
+    플랫폼, 국가, 카테고리, 팔로워, 참여율, 성별, 연령대, 연락처 정보, 스폰서십, TikTok Shop, Amazon Storefront, 제외 브랜드 또는 경쟁사로 필터링합니다. **Recommended**, **Followers**, **Engagement**, **Last sponsored** 순으로 정렬합니다.
+  </Step>
+  <Step title="메모 추가">
+    크리에이터의 상세 정보 패널을 열고 **Memo** 탭으로 이동합니다. 아웃리치 이력, 견적 또는 콘텐츠 적합성에 대한 메모를 기록합니다.
+  </Step>
+</Steps>
+
+<Warning>
+  북마크 아이콘으로 크리에이터를 저장 해제하면 해당 크리에이터가 **모든** 폴더에서 제거됩니다. 폴더를 삭제하면 폴더만 제거되며, 그 안의 크리에이터는 Saved에 그대로 남아 있습니다.
+</Warning>
+
+## 내보내기 및 업로드
+
+| 작업 | 방법 | 요금제 |
+| --- | --- | --- |
+| **Export to CSV** | **Download** 아이콘을 선택합니다. 내보내기는 활성화된 필터와 선택 항목을 따릅니다. | Basic 이상 |
+| **Upload creators** | **Upload**를 선택한 뒤 크리에이터 핸들이 포함된 CSV 또는 Excel 파일을 추가합니다. picobean이 해당 데이터를 수집하고 일치하는 항목을 Private DB에 추가합니다. | Enterprise |
+
+## 다음 단계
+
+- [Discover에서 더 많은 크리에이터 찾기](/ko/influencer/discover)
+- [캠페인 생성](/ko/campaigns/create-campaign)

@@ -1,0 +1,91 @@
+---
+title: "picobean 요금제, 크레딧, 인보이스 관리"
+sidebarTitle: "Billing"
+description: "현재 picobean 요금제와 크레딧 잔액을 확인하고, 요금제를 비교한 뒤 Stripe Checkout으로 업그레이드하고, 과거 인보이스를 확인하거나 다운로드하세요."
+---
+
+picobean **Settings**의 **Usage & Billing** 탭에서는 현재 요금제, 크레딧 잔액, 인보이스, 그리고 모든 요금제 비교를 확인할 수 있습니다. 이 페이지에서는 크레딧 사용 방식, 업그레이드 방법, 구독 관리 방법을 설명합니다. 각 요금제에 포함된 기능 목록은 [Plans and plugins](/ko/get-started/plans-and-plugins)를 참조하세요.
+
+{/* SCREENSHOT TODO: Usage & Billing 탭 화면으로 My Plan 카드(크레딧 막대)와 요금제 비교 영역이 보이도록 캡처합니다.
+  <Frame>
+  <img src="/images/billing.png" alt="My Plan과 요금제 비교가 표시된 Usage & Billing 탭" />
+  </Frame>
+  */}
+
+## 주요 개념
+
+| 용어 | 의미 |
+| --- | --- |
+| **Plan** | 조직의 구독 등급으로, Free, Basic, Enterprise 중 하나입니다. |
+| **Credits** | 테이블 생성과 일일 모니터링에 사용되는 월간 할당량입니다. |
+| **Monthly cap** | 요금제에 포함된 한 달 크레딧 수입니다. |
+| **Customer Portal** | Stripe에서 결제 정보를 업데이트하고 구독을 취소하는 페이지입니다. |
+
+## 현재 요금제 확인
+
+**Settings**를 열고 **Usage & Billing**을 선택합니다. **My Plan** 카드에 다음 정보가 표시됩니다:
+
+- **Active** 배지와 함께 표시되는 현재 요금제명
+- 유료 구독 중인 경우 구독 종료일
+- 남은 크레딧과 월간 한도. 예를 들어 `150 / 300`과 진행 막대로 표시됩니다.
+
+## 크레딧 사용 방법
+
+**My Plan** 카드에서 **View more**를 선택하면 **Credit costs**를 확인할 수 있습니다.
+
+| 작업 | 크레딧 비용 |
+| --- | --- |
+| Table generation | 25행마다 1크레딧, 소수점은 올림 처리. 예를 들어 100행은 4크레딧이 듭니다. |
+| Daily monitoring | 하루에 1크레딧입니다. |
+
+## 요금제 비교
+
+**Compare our plans** 구역에서는 각 요금제와 포함 기능을 확인할 수 있습니다. 상위 요금제가 필요한 기능은 잠금 표시가 나타납니다.
+
+| 요금제 | 가격 | 월간 크레딧 | 주요 기능 |
+| --- | --- | --- | --- |
+| **Free** | \$0 | 10 | 저장 목록, 폴더, 메모, 번역 |
+| **Basic** | \$60 | 300 | AI 검색, 모니터링, CSV 다운로드, 바이럴 콘텐츠 대시보드 |
+| **Enterprise** | \$499 | 3,000 | 캠페인, 이메일 아웃리치, 메일박스 관리, 팀 멤버, 전용 DB, 콘텐츠 업로드 |
+
+## 요금제 업그레이드
+
+<Steps>
+  <Step title="Usage & Billing 열기">
+    **Settings** > **Usage & Billing**으로 이동합니다.
+  </Step>
+  <Step title="요금제 선택">
+    요금제 비교 영역에서 원하는 요금제의 **Upgrade**를 선택합니다. 일부 Enterprise 구매의 경우 버튼이 **Start payment**로 표시될 수 있습니다.
+  </Step>
+  <Step title="결제 완료">
+    Stripe Checkout에서 결제 정보를 입력합니다. 결제가 성공하면 새 요금제가 즉시 적용됩니다.
+  </Step>
+</Steps>
+
+## 구독 관리
+
+결제 수단을 업데이트하거나 구독을 취소하려면 **Payment** 구역의 **Manage subscription**을 선택하세요. 그러면 Stripe Customer Portal이 열립니다.
+
+<Note>
+  결제는 Stripe에서 처리합니다. picobean은 카드 정보를 저장하지 않습니다.
+</Note>
+
+## 인보이스 확인
+
+**Invoices** 구역에 과거 인보이스 목록이 표시됩니다. 월 선택기로 청구 기간을 변경할 수 있습니다.
+
+| 항목 | 설명 |
+| --- | --- |
+| **Date** | 인보이스 발행일입니다. |
+| **Description** | 품목 설명입니다. |
+| **Status** | 예를 들어 **Paid**와 같이 표시됩니다. |
+| **Amount** | 인보이스 총액입니다. |
+| **Invoice** | 인보이스 PDF 링크입니다. |
+
+선택한 월에 인보이스가 없으면 테이블에 \*\*No invoices for this month.\*\*라고 표시됩니다.
+
+## 다음 단계
+
+- [요금제별 기능 비교](/ko/get-started/plans-and-plugins)
+- [팀 멤버 초대](/ko/account/team-and-members)
+- [메일박스 연결](/ko/email/connect-mailbox)

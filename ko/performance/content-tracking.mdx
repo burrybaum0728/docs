@@ -1,0 +1,191 @@
+---
+title: "picobean에서 콘텐츠 추적 및 주제 테마 분석"
+sidebarTitle: "콘텐츠 추적"
+description: "추적 중인 계정의 게시물을 탐색하고 저장한 콘텐츠를 한 곳에서 관리하며, Trend Analytics Insight로 어떤 테마가 잘 작동하는지 확인합니다."
+---
+
+picobean **Performance Dashboard**의 **Content** 탭에는 모니터링 중인 계정의 개별 게시물이 표시되어 어떤 동영상이 조회수와 참여율을 높이는지 알 수 있습니다. 이 페이지에서는 **Trend Analytics Insight** 기능도 다루며, 이 기능에서는 특정 주제에 대한 콘텐츠를 테마별로 그룹화하고 각 테마를 평가합니다.
+
+{/* SCREENSHOT TODO: 소스 필터(My account, My influencer, Competitor)와 한 행이 확장된 게시물 테이블이 포함된 Content 탭 화면.
+  <Frame>
+  <img src="/images/content-tracking.png" alt="콘텐츠 탭: 게시물 성과 테이블" />
+  </Frame>
+  */}
+
+## 사전 요구 사항
+
+- **Manage account**에서 추가한 모니터링 계정이 있어야 합니다. 자세한 내용은 [성과 대시보드](/ko/performance/dashboard) 페이지를 참조하세요.
+
+<Note>
+  바이럴 콘텐츠 조회수 기능을 사용하려면 **Basic** 이상의 요금제가 필요합니다. 콘텐츠 업로드 기능은 **Enterprise** 요금제에서 이용할 수 있습니다.
+</Note>
+
+## Content 탭에서 게시물 탐색
+
+<Steps>
+  <Step title="Content 탭 열기">
+    **Performance Dashboard**로 이동한 뒤 **Content** 탭을 선택합니다.
+  </Step>
+  <Step title="소스 선택">
+    **Select account** 아래에서 **My account**, **My influencer**, **Competitor** 중 하나 이상의 소스를 선택합니다. 최소한 하나의 소스는 계속 선택 상태로 유지해야 합니다.
+  </Step>
+  <Step title="날짜 범위 설정">
+    **Date range**를 사용해 예를 들어 **Last 30 Days** 같은 기간으로 게시물을 제한합니다.
+  </Step>
+  <Step title="테이블 정렬">
+    열 머리글을 선택해 정렬할 수 있습니다. 예를 들어 \*\*View #\*\*를 선택하면 조회수가 가장 높은 게시물을 찾을 수 있습니다.
+  </Step>
+</Steps>
+
+### 콘텐츠 테이블 열
+
+| 열 | 의미 |
+| --- | --- |
+| **Preview** | 게시물 썸네일입니다. |
+| **Title** | 캡션이나 제목입니다. |
+| **Account** | 게시한 계정입니다. |
+| **Detected product** | picobean이 콘텐츠에서 감지한 제품입니다. |
+| **Upload date** | 게시물이 게시된 날짜입니다. |
+| **View #** | 조회수입니다. |
+| **Like #** | 좋아요 수입니다. |
+| **ER** | 참여율입니다. |
+| **Comments** | 댓글 수입니다. |
+| **Shares** | 공유 수입니다. |
+| **Reposts** | 재게시 수입니다. |
+| **Bookmark** | 북마크 수입니다. |
+
+### 개별 게시물 성과 보기
+
+행을 선택하면 확장됩니다. 확장된 행에는 해당 게시물의 시간에 따른 지표 차트가 표시되어 동영상이 계속 성장 중인지 아니면 정점을 지났는지 확인할 수 있습니다. 게시물 상세 정보를 열면 더 자세한 내용을 볼 수 있으며, 해당 화면에서 **Download PDF**를 사용해 내보낼 수 있습니다.
+
+<Tip>
+  캠페인 시작 후 **My influencer**로 필터링하면 파트너 게시물을 나란히 비교할 수 있습니다. 전체 캠페인은 [캠페인 지표](/ko/performance/campaign-metrics)에서 검토하세요.
+</Tip>
+
+## Trend Analytics Insight로 테마 분석
+
+Trend Analytics Insight를 사용하면 "소스별 트렌드 콘텐츠와 계정 트렌드를 분석"할 수 있습니다. 주제를 설명하면 picobean이 에이전트를 배치해 관련 테마를 찾고 각 테마를 긍정, 부정, 또는 중립으로 평가합니다.
+
+<Steps>
+  <Step title="주제 생성">
+    **Create Topic**을 선택합니다. **Register new** 탭에서 **Describe topic**을 입력하고 선택적으로 **Brand name**을 입력합니다. **Discover** 키워드(예: "skincare routine, glass skin"), **Influencer** 키워드(예: "K-beauty reviewers"), **Hashtag** 키워드(예: "#kbeauty")를 추가합니다.
+  </Step>
+  <Step title="에이전트 대기">
+    picobean은 **Deploying agent**를 표시한 뒤 **Discovering themes**, **Fetching TikTok content** 순으로 진행 상태를 보여줍니다. 일반적으로 신선한 콘텐츠는 2~4분 이내에 나타납니다.
+  </Step>
+  <Step title="테마 검토">
+    **Themes**에서 **All**, **Good**, **Bad**, **Neutral**, **Trending**으로 필터링하거나 **Search themes**를 사용할 수 있습니다. 각 테마에는 **Rating**, **Sentiment**, **Occurrences**가 표시됩니다.
+  </Step>
+  <Step title="증거 자료 열기">
+    **Content evidence** 또는 **Account evidence**로 전환하면 일치하는 게시물과 제작자를 확인할 수 있습니다. **Relevance**, **Newest**, **Views**, **Followers**, **Mentions** 순으로 정렬한 뒤 **Open content** 또는 **Open account**를 선택합니다.
+  </Step>
+</Steps>
+
+최대 2개의 주제를 등록할 수 있습니다. **Registered topics** 탭에서 관리하고 **Remove**를 선택해 삭제할 수 있습니다. 에이전트가 "No fresh trends found"라고 보고하면 더 넓은 주제로 시도해 보세요.
+
+### 테마 보고서 읽기
+
+테마를 열면 **Theme analysis report**가 표시됩니다: **AI Summary**, **Theme explanation**, **Views Over Time**, **Upload Trend**를 확인할 수 있습니다. **View related content** 또는 **View accounts**를 사용해 증거 자료로 이동할 수 있습니다.
+
+## 결과
+
+내 계정, 인플루언서, 경쟁사 중 어떤 개별 게시물이 가장 잘 작동하는지, 그리고 내 주제에 대해 어떤 테마가 효과적인지 알 수 있습니다.
+
+## 다음 단계
+
+- [캠페인 결과 측정](/ko/performance/campaign-metrics)
+- [TikTok 및 Instagram 트렌드 탐색](/ko/trends/trends)
+- [성과가 좋은 테마에 맞는 제작자 찾기](/ko/account-search/ai-search)
+
+picobean **Performance Dashboard**의 **Content** 탭에는 모니터링 중인 계정의 개별 게시물이 표시되어 어떤 동영상이 조회수와 참여율을 높이는지 알 수 있습니다. 이 페이지에서는 **Trend Analytics Insight** 기능도 다루며, 이 기능에서는 특정 주제에 대한 콘텐츠를 테마별로 그룹화하고 각 테마를 평가합니다.
+
+{/* SCREENSHOT TODO: 소스 필터(My account, My influencer, Competitor)와 한 행이 확장된 게시물 테이블이 포함된 Content 탭 화면.
+  <Frame>
+  <img src="/images/content-tracking.png" alt="콘텐츠 탭: 게시물 성과 테이블" />
+  </Frame>
+  */}
+
+## 사전 요구 사항
+
+- **Manage account**에서 추가한 모니터링 계정이 있어야 합니다. 자세한 내용은 [성과 대시보드](/ko/performance/dashboard) 페이지를 참조하세요.
+
+<Note>
+  바이럴 콘텐츠 조회수 기능을 사용하려면 **Basic** 이상의 요금제가 필요합니다. 콘텐츠 업로드 기능은 **Enterprise** 요금제에서 이용할 수 있습니다.
+</Note>
+
+## Content 탭에서 게시물 탐색
+
+<Steps>
+  <Step title="Content 탭 열기">
+    **Performance Dashboard**로 이동한 뒤 **Content** 탭을 선택합니다.
+  </Step>
+  <Step title="소스 선택">
+    **Select account** 아래에서 **My account**, **My influencer**, **Competitor** 중 하나 이상의 소스를 선택합니다. 최소한 하나의 소스는 계속 선택 상태로 유지해야 합니다.
+  </Step>
+  <Step title="날짜 범위 설정">
+    **Date range**를 사용해 예를 들어 **Last 30 Days** 같은 기간으로 게시물을 제한합니다.
+  </Step>
+  <Step title="테이블 정렬">
+    열 머리글을 선택해 정렬할 수 있습니다. 예를 들어 \*\*View #\*\*를 선택하면 조회수가 가장 높은 게시물을 찾을 수 있습니다.
+  </Step>
+</Steps>
+
+### 콘텐츠 테이블 열
+
+| 열 | 의미 |
+| --- | --- |
+| **Preview** | 게시물 썸네일입니다. |
+| **Title** | 캡션이나 제목입니다. |
+| **Account** | 게시한 계정입니다. |
+| **Detected product** | picobean이 콘텐츠에서 감지한 제품입니다. |
+| **Upload date** | 게시물이 게시된 날짜입니다. |
+| **View #** | 조회수입니다. |
+| **Like #** | 좋아요 수입니다. |
+| **ER** | 참여율입니다. |
+| **Comments** | 댓글 수입니다. |
+| **Shares** | 공유 수입니다. |
+| **Reposts** | 재게시 수입니다. |
+| **Bookmark** | 북마크 수입니다. |
+
+### 개별 게시물 성과 보기
+
+행을 선택하면 확장됩니다. 확장된 행에는 해당 게시물의 시간에 따른 지표 차트가 표시되어 동영상이 계속 성장 중인지 아니면 정점을 지났는지 확인할 수 있습니다. 게시물 상세 정보를 열면 더 자세한 내용을 볼 수 있으며, 해당 화면에서 **Download PDF**를 사용해 내보낼 수 있습니다.
+
+<Tip>
+  캠페인 시작 후 **My influencer**로 필터링하면 파트너 게시물을 나란히 비교할 수 있습니다. 전체 캠페인은 [캠페인 지표](/ko/performance/campaign-metrics)에서 검토하세요.
+</Tip>
+
+## Trend Analytics Insight로 테마 분석
+
+Trend Analytics Insight를 사용하면 "소스별 트렌드 콘텐츠와 계정 트렌드를 분석"할 수 있습니다. 주제를 설명하면 picobean이 에이전트를 배치해 관련 테마를 찾고 각 테마를 긍정, 부정, 또는 중립으로 평가합니다.
+
+<Steps>
+  <Step title="주제 생성">
+    **Create Topic**을 선택합니다. **Register new** 탭에서 **Describe topic**을 입력하고 선택적으로 **Brand name**을 입력합니다. **Discover** 키워드(예: "skincare routine, glass skin"), **Influencer** 키워드(예: "K-beauty reviewers"), **Hashtag** 키워드(예: "#kbeauty")를 추가합니다.
+  </Step>
+  <Step title="에이전트 대기">
+    picobean은 **Deploying agent**를 표시한 뒤 **Discovering themes**, **Fetching TikTok content** 순으로 진행 상태를 보여줍니다. 일반적으로 신선한 콘텐츠는 2~4분 이내에 나타납니다.
+  </Step>
+  <Step title="테마 검토">
+    **Themes**에서 **All**, **Good**, **Bad**, **Neutral**, **Trending**으로 필터링하거나 **Search themes**를 사용할 수 있습니다. 각 테마에는 **Rating**, **Sentiment**, **Occurrences**가 표시됩니다.
+  </Step>
+  <Step title="증거 자료 열기">
+    **Content evidence** 또는 **Account evidence**로 전환하면 일치하는 게시물과 제작자를 확인할 수 있습니다. **Relevance**, **Newest**, **Views**, **Followers**, **Mentions** 순으로 정렬한 뒤 **Open content** 또는 **Open account**를 선택합니다.
+  </Step>
+</Steps>
+
+최대 2개의 주제를 등록할 수 있습니다. **Registered topics** 탭에서 관리하고 **Remove**를 선택해 삭제할 수 있습니다. 에이전트가 "No fresh trends found"라고 보고하면 더 넓은 주제로 시도해 보세요.
+
+### 테마 보고서 읽기
+
+테마를 열면 **Theme analysis report**가 표시됩니다: **AI Summary**, **Theme explanation**, **Views Over Time**, **Upload Trend**를 확인할 수 있습니다. **View related content** 또는 **View accounts**를 사용해 증거 자료로 이동할 수 있습니다.
+
+## 결과
+
+내 계정, 인플루언서, 경쟁사 중 어떤 개별 게시물이 가장 잘 작동하는지, 그리고 내 주제에 대해 어떤 테마가 효과적인지 알 수 있습니다.
+
+## 다음 단계
+
+- [캠페인 결과 측정](/ko/performance/campaign-metrics)
+- [TikTok 및 Instagram 트렌드 탐색](/ko/trends/trends)
+- [성과가 좋은 테마에 맞는 제작자 찾기](/ko/account-search/ai-search)

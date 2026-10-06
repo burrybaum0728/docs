@@ -1,0 +1,113 @@
+---
+title: "브리프, 타겟 및 템플릿으로 캠페인 만들기"
+sidebarTitle: "Create Campaign"
+description: "picobean의 신규 캠페인 마법사를 사용하여 브리프, 타겟 채널, 크리에이터 페르소나, 템플릿, 예산을 설정하고 AI 검색 또는 Discover로 크리에이터를 추가하세요."
+---
+
+단계별 마법사를 통해 브리프, 타겟 조건, 템플릿, 예산을 입력하여 캠페인을 생성합니다. 생성 후에는 AI 검색 또는 Discover 패널을 통해 크리에이터를 추가하고, 아웃리치를 진행할 수 있습니다.
+
+<Note>
+  캠페인은 **Enterprise** 플랜에서만 이용할 수 있습니다.
+</Note>
+
+{/* SCREENSHOT TODO: New campaign wizard on the brief step, with target channel (TikTok/Instagram) selection.
+  <Frame>
+  <img src="/images/create-campaign.png" alt="New campaign wizard" />
+  </Frame>
+  */}
+
+## 사전 준비사항
+
+- Enterprise 플랜을 사용 중이어야 합니다.
+- 아웃리치 이메일을 보낼 계획이라면 워크스페이스에 연결된 메일박스가 최소 하나 있어야 합니다.
+
+## 마법사 실행하기
+
+<Steps>
+  <Step title="캠페인 열기">
+    사이드바에서 **Campaign**을 클릭한 후 **Create campaign**을 클릭합니다.
+  </Step>
+  <Step title="단계별 진행">
+    마법사는 5단계로 구성되어 있으며, 각 단계를 완료해야 다음으로 넘어갈 수 있습니다. **Enter**를 누르거나 **Continue**를 클릭하면 다음 단계로 이동합니다. **Back**을 클릭하면 이전 단계를 수정할 수 있습니다.
+  </Step>
+</Steps>
+
+## 1단계: Campaign
+
+| 필드 | 필수 | 설명 |
+| --- | --- | --- |
+| Title | 예 | 캠페인 이름입니다. 예: "Summer Glow Seeding". |
+| Description | 아니오 | picobean 에이전트가 적합한 인플루언서를 찾는 데 사용하는 간단한 요약입니다. |
+| Product | 예 | 최소 하나의 제품명입니다. **Add product**로 여러 제품을 추가하고 **Remove product**로 제거할 수 있습니다. |
+| Start date | 예 | 캠페인 시작일입니다. |
+| End date | 아니오 | 선택적 캠페인 마감일입니다. |
+
+## 2단계: Setup
+
+캠페인 운영 방식을 선택합니다.
+
+| 필드 | 필수 | 옵션 |
+| --- | --- | --- |
+| Campaign type | 예 | **Unpaid seeding** (제품 증정) 또는 **Paid seeding** (대가 기반)입니다. |
+| Campaign purpose | 예 | **Views** 또는 **Conversion**입니다. 목표에 맞는 크리에이터를 추천하는 데 사용됩니다. |
+| Target budget | 유료 필수 | USD, KRW, JPY로 총 예산을 입력합니다. 무료 캠페인은 자동으로 0으로 설정됩니다. |
+| Target influencer number | 예 | 50, 100, 200, 300 중 선택하거나 직접 숫자를 입력할 수 있습니다. |
+
+## 3단계: Target
+
+채널과 국가를 선택합니다.
+
+| 필드 | 필수 | 옵션 |
+| --- | --- | --- |
+| Target channel | 예 | **TikTok** 또는 **Instagram** 중 선택합니다. YouTube는 **Coming soon**으로 표시됩니다. |
+| Target country | 예 | 추천 목록에서 하나 이상 선택하거나, 전체 국가 목록을 검색하여 선택할 수 있습니다. 추천 옵션에는 미국, 일본, 대한민국, GCC 국가, 유럽 국가, LATAM 국가, MENA 국가, CIS 국가가 포함됩니다. |
+
+## 4단계: Target influencer
+
+크리에이터 프로필을 정의합니다.
+
+| 필드 | 필수 | 옵션 |
+| --- | --- | --- |
+| Follower number | 예 | 1K–10K, 10K–50K, 50K–100K, 100K–500K, 500K+ 범위 중 하나 이상 선택합니다. |
+| TikTok Shop only | 예 | TikTok Shop 판매 이력이 있는 인플루언서만 검색하려면 **Yes**, 전체 검색이면 **No**입니다. |
+| Race & culture | 아니오 | 선택적 다중 선택: 동아시아, 동남아시아, 남아시아, 중동, 백인, 어두운 피부, 히스패닉/라티노, 혼혈입니다. |
+| Language | 아니오 | 선택적 다중 선택: 영어, 한국어, 일본어, 스페인어, 아랍어, 러시아어입니다. |
+| Content description | 아니오 | 원하는 콘텐츠 스타일이나 주제를 설명합니다. 예: "Beauty and skincare routines, GRWM, product unboxing". AI는 이를 바탕으로 크리에이터를 추천합니다. |
+
+## 5단계: Templates
+
+선택적으로 저장된 템플릿을 할당하여 아웃리치 및 후속 조치에 사용할 수 있습니다.
+
+| 템플릿 유형 | 용도 |
+| --- | --- |
+| First send | 크리에이터에게 보내는 최초 아웃리치 이메일입니다. |
+| Reply | 크리에이터 회신에 대응하는 템플릿입니다. |
+| Campaign guide | 딜 합의 후 전송하는 콘텐츠 가이드라인입니다. |
+| Product shipping | 배송 주소 수집 후 전송하는 배송 안내입니다. |
+
+이미 **Templates** 페이지에 저장한 템플릿만 여기에 표시됩니다. 저장된 템플릿이 없으면 Templates 페이지에서 나중에 추가할 수 있습니다. 할당하지 않으려면 **None**을 선택합니다.
+
+## 생성 또는 보류
+
+마지막 단계에서 **Create campaign**을 클릭하면 캠페인이 저장됩니다. 마법사는 내부적으로 조건을 검색 프롬프트로 결합하며, 기본적으로 크리에이터 추천은 보류하여 캠페인의 Recommendations 탭에서 나중에 실행할 수 있습니다.
+
+생성 후 바로 추천을 받으려면 캠페인 Overview에서 실행할 수 있습니다.
+
+## 생성 후: 크리에이터 추가
+
+캠페인이 생성되면 해당 캠페인을 열고 **Target list** 또는 **Recommendations** 탭으로 이동합니다. 로스터를 채우는 방법은 두 가지가 있습니다:
+
+- **AI search**: 자연어로 원하는 크리에이터를 설명하면 에이전트가 조건을 파싱하여 순위별 결과를 반환합니다.
+- **Discover panel**: 이미 picobean에 인덱싱된 크리에이터를 둘러보고 바로 추가합니다.
+
+많은 크리에이터를 한 번에 추가하려면 [로스터 및 딜 관리](/ko/campaigns/roster-and-deals)를 참조하세요.
+
+## 결과
+
+새 캠페인이 캠페인 목록에 나타납니다. {/* TODO: verify whether a future start date shows as Scheduled */} Overview 탭에는 브리프, 진행 퍼널, 예산, 미완료 작업이 표시됩니다.
+
+## 다음 단계
+
+- [로스터 및 딜 관리](/ko/campaigns/roster-and-deals)
+- [시딩 및 배송 추적](/ko/campaigns/seeding-and-shipping)
+- [콘텐츠 검수 및 결제 기록](/ko/campaigns/content-review-and-payment)

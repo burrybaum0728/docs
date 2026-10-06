@@ -1,0 +1,129 @@
+---
+title: "캠페인 로스터, 딜, 메모 및 예산 관리"
+sidebarTitle: "Roster and Deals"
+description: "picobean 캠페인에서 크리에이터 추가 및 제거, 로스터 단계 편집, 딜 협상, 수수료 설정, 예산 진행 추적, 크리에이터별 메모 작성 방법을 알아보세요."
+---
+
+캠페인 로스터는 함께 협업하는 크리에이터 목록입니다. 검색 또는 Discover에서 크리에이터를 추가하고, 각 참여자의 단계를 추적하며, 딜 협상과 수수료를 관리하고, 메모를 첨부하고, 예산 패널이 실시간으로 업데이트되는 것을 확인할 수 있습니다.
+
+<Note>
+  캠페인은 **Enterprise** 플랜에서만 이용할 수 있습니다.
+</Note>
+
+{/* SCREENSHOT TODO: Campaign roster table with stages, fees, and the budget progress bar.
+  <Frame>
+  <img src="/images/campaign-roster.png" alt="Campaign roster with deal stages and budget" />
+  </Frame>
+  */}
+
+## 로스터에 크리에이터 추가하기
+
+<Steps>
+  <Step title="타겟 리스트 열기">
+    캠페인 내부에서 **Target list** 또는 **Recommendations** 탭을 엽니다.
+  </Step>
+  <Step title="검색 또는 둘러보기">
+    **AI search** 프롬프트 바를 사용해 크리에이터를 설명하거나, **Discover** 패널을 열어 인덱싱된 프로필을 둘러봅니다.
+  </Step>
+  <Step title="캠페인에 추가">
+    크리에이터 카드에서 **Add**를 클릭합니다. 해당 크리에이터가 **Prospect** 단계로 로스터에 추가됩니다.
+  </Step>
+</Steps>
+
+### Discover로 대량 추가
+
+**Campaign** > 해당 캠페인 > **Bulk**로 이동하거나 `/campaign/bulk`를 엽니다. 이 화면에서 크리에이터를 검색하고 대량으로 선택한 뒤, 한 번의 동작으로 캠페인 로스터에 추가할 수 있습니다.
+
+## 크리에이터 제거하기
+
+로스터 테이블에서 해당 크리에이터 행의 **Remove** 동작을 클릭합니다. 제거 시 해당 인물의 딜 이력과 배송 데이터가 삭제되므로 확인 대화상자가 나타납니다. **Remove**를 클릭하면 제거하고, **Cancel**을 클릭하면 유지합니다.
+
+## 로스터 컬럼 및 필드
+
+로스터 테이블은 크리에이터당 한 행씩 표시합니다.
+
+| 컬럼 | 설명 |
+| --- | --- |
+| Creator ID | 핸들과 프로필 사진입니다. |
+| Creator name | 표시 이름 또는 계정명입니다. |
+| Channel | TikTok 또는 Instagram 아이콘입니다. |
+| Status | 현재 로스터 단계 칩입니다. |
+| Deal | 딜 상태와 수수료 요약입니다. 클릭하면 딜 편집기가 열립니다. |
+| Shipping | 주소 수집 상태: Address needed, Address requested, Address ready입니다. |
+| Content | 콘텐츠 검수 상태: No guide yet, Guide sent, Draft under review, Revision requested, Content approved입니다. |
+| Notes | 해당 크리에이터에 대한 비공개 메모입니다. 클릭하여 편집합니다. |
+| Actions | 제거, 계정 상세 보기, 대화로 이동입니다. |
+
+컬럼 헤더를 클릭하여 정렬할 수 있습니다. 검색 바를 사용하여 이름, 핸들, 이메일로 필터링할 수 있습니다.
+
+## 로스터 상태
+
+각 크리에이터는 하나의 표시 단계를 가집니다. 상태 칩을 클릭하여 변경할 수 있습니다.
+
+| 단계 | 라벨 | 아이콘 | 의미 |
+| --- | --- | --- | --- |
+| Prospect | Prospect | Minus | 로스터에 추가되었지만 아웃리치가 전송되지 않았습니다. |
+| Contacted | Contacted | Single check | 아웃리치 이메일 또는 DM이 전송되었습니다. |
+| Negotiating | Negotiating | Clock | 대화가 진행 중입니다. |
+| Confirmed | Confirmed | Double check | 딜 합의 또는 참여 확정되었습니다. |
+| Product sent | Product sent | Single check | 제품이 배송되었습니다. |
+| Posted | Posted | Double check | 콘텐츠가 업로드 및 매칭되었습니다. |
+| Declined | Not participating | X | 크리에이터가 거절했거나 캠페인에서 제외되었습니다. |
+
+크리에이터를 **Negotiating** 또는 **Confirmed**로 변경하면 딜 상태가 업데이트됩니다. **Product sent** 또는 **Posted**로 변경하면 로스터 상태가 업데이트됩니다. **Not participating**에서 **Product sent** 또는 **Posted**로 이동하면 확인 대화상자가 나타납니다.
+
+## 딜 편집기
+
+로스터 행의 **Deal** 셀을 클릭하면 딜 편집기가 열립니다.
+
+| 필드 | 설명 |
+| --- | --- |
+| Deal status | 드롭다운에서 선택: No offer, Offer sent, Negotiating, Agreed, Declined, Stalled입니다. |
+| Offered fee | 원래 제시한 금액입니다. |
+| Agreed fee | 양측이 합의한 최종 금액입니다. |
+| Currency | USD, KRW, EUR, JPY입니다. |
+| Note | 이 딜 변경에 대한 선택적 메모입니다. |
+
+**Save**를 클릭하여 저장합니다. 필드 아래의 딜 이력 패널에는 누가(에이전트, 사용자, 시스템) 언제 변경했는지를 시간 순서대로 보여줍니다. 합의 금액이 캠페인 예산을 초과하면, 편집기에 **budget override** 경고가 표시되고 저장 전에 초과 사유를 입력해야 합니다.
+
+### 딜 상태
+
+| 상태 | 의미 |
+| --- | --- |
+| No offer | 아직 제안이 이루어지지 않았습니다. |
+| Offer sent | 제안이 포함된 아웃리치가 전송되었습니다. |
+| Negotiating | 크리에이터가 회신하고 조건을 논의 중입니다. |
+| Agreed | 양측이 조건을 수락했습니다. |
+| Declined | 크리에이터 또는 에이전트가 협업을 거절했습니다. |
+| Stalled | 후속 조치 후에도 회신이 없습니다. |
+
+## 예산 패널
+
+Overview 탭의 예산 패널은 캠페인 예산이 어떻게 할당되었는지 보여줍니다.
+
+| 지표 | 의미 |
+| --- | --- |
+| Total budget | 브리프에서 설정한 예산입니다. |
+| Allocated | 모든 합의 수수료의 합계입니다. |
+| Confirmed | 딜 상태가 **Agreed**인 크리에이터의 수수료 합계입니다. |
+| Pending | 수수료가 아직 확정되지 않은 협상 중인 크리에이터입니다. |
+| Reserved | 거절되지 않은 모든 딜 중 금액이 있는 경우의 합계입니다. |
+| Offered, not yet answered | 제안을 받았지만 아직 답변하지 않은 크리에이터입니다. 이 금액은 예약되지 않습니다. |
+| Available | 예약 금액을 제외한 남은 예산입니다. |
+| Remaining | 확정 결제 후 남은 예산입니다. |
+
+패널에는 딜 상태, 수수료, 상대 타임스탬프가 포함된 최근 딜 목록도 표시됩니다. **View approval queue**를 클릭하면 Mailbox 탭으로 이동하여 대기 중인 에이전트 초안을 검토할 수 있습니다.
+
+## 메모
+
+로스터 행의 **Notes** 셀을 클릭하여 비공개 메모를 추가하거나 편집합니다. 메모는 로스터에서만 보이며 크리에이터에게 전송되지 않습니다. 성격 인상, 배송 선호도, 커뮤니케이션 알림을 기록하는 데 유용합니다.
+
+## 연결 정보 안내
+
+로스터 또는 대화 화면에서 크리에이터 이메일 옆의 작은 아이콘은 이메일이 인증되었는지, 또는 DM 채널을 사용할 수 있는지를 나타냅니다. 이 정보를 바탕으로 가장 적합한 아웃리치 방법을 선택할 수 있습니다.
+
+## 다음 단계
+
+- [시딩 및 배송 추적](/ko/campaigns/seeding-and-shipping)
+- [콘텐츠 검수 및 결제 기록](/ko/campaigns/content-review-and-payment)
+- [캠페인 개요 및 진행 퍼널](/ko/campaigns/overview)

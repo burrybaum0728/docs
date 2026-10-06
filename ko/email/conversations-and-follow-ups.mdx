@@ -1,0 +1,75 @@
+---
+title: "크리에이터 이메일 대화, 답변 및 후속 조치 관리"
+sidebarTitle: "대화"
+description: "picobean Mailbox에서 크리에이터의 답변을 읽고, 리치 답변 편집기와 첨부파일로 응답하며, 크리에이터가 침묵할 때 후속 조치를 예약합니다."
+---
+
+크리에이터의 답변은 **Campaign**의 **Mailbox** 탭에 도착합니다. 각 대화는 크리에이터의 프로필 및 거래 상태와 함께 전체 이메일 스레드를 보여주므로, 충분한 맥락을 갖고 응답할 수 있습니다. 이 페이지에서는 대화를 읽고 답변하며, 응답이 끊긴 크리에이터를 후속 조치하는 방법을 다룹니다.
+
+{/* SCREENSHOT TODO: 크리에이터 대화와 답변 편집기가 열린 Mailbox 화면.
+  <Frame>
+  <img src="/images/mailbox-conversation.png" alt="Mailbox의 크리에이터 대화" />
+  </Frame>
+  */}
+
+## 핵심 개념
+
+| 용어 | 의미 |
+| --- | --- |
+| **Conversation** | 한 크리에이터와 한 캠페인에 대한 전체 이메일 스레드입니다. |
+| **Account sidebar** | 스레드 옆에 표시되는 크리에이터의 프로필, 명단 상태, 거래 상세정보입니다. |
+| **Agent draft** | AI가 사용자를 위해 준비한 답변입니다. [AI outreach agent](/ko/email/ai-outreach-agent)를 참조하세요. |
+| **Follow-up** | 크리에이터가 답변하지 않았을 때 발송되는 안내 이메일입니다. |
+
+## 크리에이터에게 답변
+
+<Steps>
+  <Step title="Mailbox 열기">
+    **Campaign** > **Mailbox**로 이동하여 대화를 선택합니다.
+  </Step>
+  <Step title="맥락 검토">
+    스레드를 읽고, 계정 사이드바에서 크리에이터의 통계, 거래 상태, 명단 단계를 확인합니다.
+  </Step>
+  <Step title="답변 작성">
+    리치 답변 편집기를 사용하여 텍스트를 서식 지정하고, Cc 또는 Bcc 수신자를 추가하고, 파일을 첨부합니다. 에이전트 초안이 있으면 **Reply with this draft**를 선택하여 해당 초안으로 시작할 수 있습니다.
+  </Step>
+  <Step title="발송 또는 예약">
+    즉시 발송하거나, 나중을 위해 예약합니다.
+  </Step>
+</Steps>
+
+<Note>
+  첨부파일은 파일 수와 총 크기에 제한이 있습니다. 제한을 초과하면 picobean이 **Too many attachments** 또는 **Attachments too large**를 표시합니다. 유효하지 않은 Cc 또는 Bcc 주소는 거부됩니다.
+</Note>
+
+<Info>
+  대화에서 메시지를 다시 발송할 수 있는 사람은 원래 발신자뿐입니다.
+</Info>
+
+## 답변 플래그 및 에이전트 상태
+
+대화에 에이전트 배지가 표시될 수 있습니다:
+
+| 배지 | 의미 |
+| --- | --- |
+| **Needs your OK** / **Agent: needs review** | 에이전트가 초안을 작성하여 승인을 기다리고 있습니다. |
+| **Agent is sending…** | 승인된 답변이 발송 중입니다. |
+| **Auto-sent** | 에이전트가 사용자의 규칙에 따라 자동으로 답변을 보냈습니다. |
+| **Agent send failed** | 발송에 실패했습니다. 대화를 열어 다시 시도하세요. |
+| **Reviewed · draft saved** | 플래그를 검토한 것으로 표시했습니다. 초안은 나중에 사용할 수 있도록 보존됩니다. |
+
+## 침묵한 크리에이터 후속 조치
+
+후속 조치는 두 가지 방식으로 할 수 있습니다:
+
+- **Sequences(시퀀스)**: 캠페인 시퀀스에 **No reply** 단계를 추가하면 후속 이메일이 자동으로 발송됩니다. [발송 및 예약](/ko/email/send-and-schedule)을 참조하세요.
+- **Agent follow-ups**: 에이전트 설정에서 일 단위 **Follow-up delay**를 설정합니다. 그러면 답변이 없을 때 에이전트가 후속 조치 초안을 작성합니다. 0으로 설정하면 이 기능이 꺼집니다.
+
+<Warning>
+  에이전트 답변이 대기열에 있는 상태에서 수동으로 답변을 발송하면, 에이전트의 메시지가 취소됩니다. 이는 크리에이터가 두 개의 답변을 받지 않도록 방지합니다.
+</Warning>
+
+## 다음 단계
+
+- [AI outreach agent 설정](/ko/email/ai-outreach-agent)
+- [명단 및 거래 업데이트](/ko/campaigns/roster-and-deals)

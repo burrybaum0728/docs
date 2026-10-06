@@ -1,0 +1,91 @@
+---
+title: "AI 에이전트로 크리에이터 답변 및 협상 자동화"
+sidebarTitle: "AI Outreach Agent"
+description: "picobean의 시딩 에이전트를 구성하여 크리에이터 답변을 읽고, 답변 초안을 작성하거나 자동 발송하고, 예산 내에서 수수료를 협상하며, 캠페인 가이드를 전송합니다."
+---
+
+**seeding agent**는 캠페인의 모든 크리에이터 답변을 읽습니다. 크리에이터가 원하는 것을 파악(수락, 반제안, 질문, 거절)하고, 사용자의 규칙에 따라 답변 초안을 작성하거나 자동으로 발송합니다. 이 페이지에서는 각 설정과 에이전트 초안을 승인하는 방법을 설명합니다.
+
+<Note>
+  에이전트는 Campaign의 일부이며, **Enterprise** 요금제와 연결된 메일박스가 필요합니다. 예산 및 에이전트 설정을 구성하기 전에 캠페인을 저장하세요.
+</Note>
+
+{/* SCREENSHOT TODO: 에이전트 구성 섹션(AI 답변 처리, 협상 설정)과 승인 대기열의 에이전트 초안.
+  <Frame>
+  <img src="/images/ai-agent.png" alt="AI 에이전트 구성 및 승인 대기열" />
+  </Frame>
+  */}
+
+## 핵심 개념
+
+| 용어 | 의미 |
+| --- | --- |
+| **Reply intent** | 에이전트가 답변을 해석하는 방식: **Accepts**, **Counter-offer**, **Question**, **Declines**, **Not a negotiation**, **Unclear**. |
+| **Approval queue** | 사용자의 승인을 기다리는 에이전트 초안입니다. |
+| **Fee cap** | 에이전트가 자율적으로 수락할 수 있는 크리에이터당 최대 수수료입니다. |
+| **Negotiation round** | 오퍼와 반제안이 한 번 주고받는 과정입니다. |
+
+## 에이전트가 답변을 처리하는 방식 선택
+
+**Agent configuration**에서 **AI reply handling**을 설정합니다:
+
+| 모드 | 동작 |
+| --- | --- |
+| **Create drafts — review before sending** | 에이전트가 답변을 분석하고 초안을 작성합니다. 사용자가 각 초안을 승인합니다. |
+| **Auto-send when eligible** | 조건이 충족되면 에이전트가 자동으로 발송합니다. 그 외의 모든 답변은 사용자가 기다립니다. |
+| Off | 에이전트가 답변을 분석하거나 초안을 만들지 않습니다. |
+
+자동 모드에서는 에이전트가 스스로 발송할 수 있는 동작을 세부 조정할 수 있습니다: **Auto-send acceptances**, **Auto-send counters**, **Auto-close on decline**, **Auto-send campaign guide**, **Auto-send content review feedback**.
+
+## 협상 설정
+
+| 설정 | 제어 내용 |
+| --- | --- |
+| **Total budget**, **Currency** | 에이전트가 준수해야 할 캠페인 예산입니다. |
+| **Per-creator fee cap** | 한 크리에이터에 대해 에이전트가 수락할 수 있는 최고 수수료입니다. |
+| **Negotiation strength** | **High — hold firm (small moves)**, **Medium — meet in the middle**, **Low — close fast (bigger moves)** 중 선택합니다. |
+| **Opening offer** | 이메일에 `{{fee}}` 변수가 포함되지 않은 경우 에이전트가 사용하는 시작 오퍼입니다. |
+| **Max negotiation rounds** | 에이전트가 거래를 사용자에게 넘기기 전 최대 1회에서 10회까지의 협상 라운드입니다. |
+| **Follow-up delay** | 답변이 없을 때 후속 조치 초안을 작성하기까지 대기하는 0일에서 60일입니다. 0으로 설정하면 후속 조치가 꺼집니다. |
+| **Agent instructions** | 브랜드 톤, 필수 조건, 에이전트가 언급하면 안 되는 내용입니다. |
+
+**Save settings**를 선택하여 변경 사항을 적용합니다.
+
+## 에이전트가 사용자에게 문의하는 경우
+
+에이전트는 안전하게 판단할 수 없을 때 항상 답변을 사람에게 전달합니다. 예를 들어:
+
+- **Low confidence in the AI reading** 또는 **Reply intent is unclear**
+- **Currency differs from the campaign**
+- **Over the per-creator cap** 또는 **Over the campaign budget**
+- **Questions need a human answer**
+- **Max negotiation rounds reached**
+- **Creator asked for a fee on a gifted campaign**
+- **Draft failed the safety check**
+
+## 에이전트 초안 승인
+
+<Steps>
+  <Step title="승인 대기열 열기">
+    **View approval queue**를 선택하거나, **Needs approval**로 표시된 대화를 엽니다.
+  </Step>
+  <Step title="에이전트의 판단 검토">
+    **Why this needs you**, **How the AI read the reply**, **Confidence**, **Mentioned amount**, **Proposed amount**를 검토합니다.
+  </Step>
+  <Step title="결정">
+    **Approve & send**, **Edit & send**, **Send as is**, 또는 **Reject**(선택적으로 사유 포함) 중에서 선택합니다. 초안을 검토한 것으로 표시하고 발송하지 않으려면 **Reviewed · no action**을 선택합니다.
+  </Step>
+</Steps>
+
+<Warning>
+  초안을 승인 또는 편집하면 금액이 거래 원장과 캠페인 예산에 기록됩니다. 금액이 예산을 초과하면 예산 초과를 확인해야 합니다.
+</Warning>
+
+<Info>
+  기존 자동 답변은 에이전트와 동시에 실행할 수 없습니다. 기존 자동 답환이 켜져 있으면 picobean이 **Turn off & retry**를 요청합니다.
+</Info>
+
+## 다음 단계
+
+- [명단 및 거래 관리](/ko/campaigns/roster-and-deals)
+- [콘텐츠 초안 검토](/ko/campaigns/content-review-and-payment)
